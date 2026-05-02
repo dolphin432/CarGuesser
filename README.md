@@ -23,5 +23,5 @@ Note: All 4 files must be in the same folder!
 The source code, assets, and branding are the exclusive property of dolphin432.
 ​You may download and play the game for personal use.
 ​You may not copy, modify, or redistribute the code or assets without express written permission.
-​For inquiries, please contact me via GitHub
+​For inquiries, please contact me via GitHub.
 All rights reserved.Please see the COPYRIGHTS file for usage terms and conditions.
