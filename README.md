@@ -19,3 +19,8 @@ How to play:
 3. Run car_game.py with Python
 
 Note: All 4 files must be in the same folder!
+​This project is not open-source. All rights reserved.
+The source code, assets, and branding are the exclusive property of dolphin432.
+​You may download and play the game for personal use.
+​You may not copy, modify, or redistribute the code or assets without express written permission.
+​For inquiries, please contact me via GitHub
