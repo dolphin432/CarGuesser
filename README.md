@@ -25,3 +25,4 @@ The source code, assets, and branding are the exclusive property of dolphin432.
 ​You may not copy, modify, or redistribute the code or assets without express written permission.
 ​For inquiries, please contact me via GitHub.
 All rights reserved.Please see the COPYRIGHTS file for usage terms and conditions.
+"Note2: This is a non-commercial fan project. All car names and brands are property of their respective owners and are used here for identification purposes only."
