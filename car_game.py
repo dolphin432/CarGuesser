@@ -4,6 +4,7 @@ import os
 import tkinter as tk
 from tkinter import font as tkfont
 import threading
+import difflib
 
 # Colors
 BG      = "#0d0d0d"
@@ -34,6 +35,7 @@ LANGUAGES = {
         "normal_mode":    "▶  Normal Mode",
         "hint_mode":      "💡  Hint Mode",
         "expert_mode":    "🧠  Expert Mode",
+        "jdm_mode":       "🇯🇵  JDM Mode",
         "stats_btn":      "📊  Statistics",
         "settings_btn":   "⚙️  Settings",
         "guesses_left":   "Guess {}/{}",
@@ -70,12 +72,14 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normal Mode",
         "hint_lbl":       "💡 Hint Mode",
         "expert_lbl":     "🧠 Expert Mode",
+        "jdm_lbl":        "🇯🇵 JDM Mode",
     },
     "tr": {
         "title_sub":      "Arabayı Bul!",
         "normal_mode":    "▶  Normal Mod",
         "hint_mode":      "💡  İpucu Modu",
         "expert_mode":    "🧠  Uzman Mod",
+        "jdm_mode":       "🇯🇵  JDM Modu",
         "stats_btn":      "📊  İstatistikler",
         "settings_btn":   "⚙️  Ayarlar",
         "guesses_left":   "Tahmin {}/{}",
@@ -112,10 +116,123 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normal Mod",
         "hint_lbl":       "💡 İpucu Modu",
         "expert_lbl":     "🧠 Uzman Mod",
+        "jdm_lbl":        "🇯🇵 JDM Modu",
+    },
+    "de": {
+        "title_sub":      "Rate das Auto!",
+        "normal_mode":    "▶  Normaler Modus",
+        "hint_mode":      "💡  Hinweis-Modus",
+        "expert_mode":    "🧠  Experten-Modus",
+        "jdm_mode":       "🇯🇵  JDM-Modus",
+        "stats_btn":      "📊  Statistiken",
+        "settings_btn":   "⚙️  Einstellungen",
+        "guesses_left":   "Versuch {}/{}",
+        "correct":        "Richtig",
+        "close":          "Nah (gleicher Kontinent / ±20% Preis / benachbarter Motor)",
+        "wrong":          "Falsch",
+        "car_col":        "Auto",
+        "brand_col":      "Marke",
+        "engine_col":     "Motor",
+        "price_col":      "Preis",
+        "country_col":    "Land",
+        "year_col":       "Jahr",
+        "hp_col":         "PS",
+        "hint_btn":       "💡 Hinweis holen (i)",
+        "no_hint":        "💡 Keine Hinweise mehr!",
+        "already_used":   "⚠ Dieses Auto wurde bereits geraten!",
+        "not_found":      "⚠ Auto nicht gefunden! Genauenamen eingeben.",
+        "congrats":       "🎉 Richtig in {} Versuchen!",
+        "failed":         "💀 Verloren! Antwort:",
+        "play_again":     "Nochmal spielen",
+        "main_menu":      "Hauptmenü",
+        "stats_title":    "📊 STATISTIKEN",
+        "total_games":    "Spiele gesamt",
+        "win_rate":       "Gewinnrate",
+        "back":           "← Zurück",
+        "settings_title": "⚙️ EINSTELLUNGEN",
+        "language_label": "Sprache",
+        "hint_engine":    "💡 Motor: {}",
+        "hint_country":   "💡 Land: {}",
+        "hint_year":      "💡 Jahr: {}",
+        "hint_brand":     "💡 Marke: {}",
+        "hint_price":     "💡 Preisbereich: ${} - ${}",
+        "8_guesses":      "Du hast 8 Versuche",
+        "normal_lbl":     "▶ Normaler Modus",
+        "hint_lbl":       "💡 Hinweis-Modus",
+        "expert_lbl":     "🧠 Experten-Modus",
+        "jdm_lbl":        "🇯🇵 JDM-Modus",
+    },
+    "pl": {
+        "title_sub":      "Zgadnij auto!",
+        "normal_mode":    "▶  Tryb normalny",
+        "hint_mode":      "💡  Tryb podpowiedzi",
+        "expert_mode":    "🧠  Tryb eksperta",
+        "jdm_mode":       "🇯🇵  Tryb JDM",
+        "stats_btn":      "📊  Statystyki",
+        "settings_btn":   "⚙️  Ustawienia",
+        "guesses_left":   "Próba {}/{}",
+        "correct":        "Poprawnie",
+        "close":          "Blisko (ten sam kontynent / ±20% ceny / sąsiedni silnik)",
+        "wrong":          "Błędnie",
+        "car_col":        "Auto",
+        "brand_col":      "Marka",
+        "engine_col":     "Silnik",
+        "price_col":      "Cena",
+        "country_col":    "Kraj",
+        "year_col":       "Rok",
+        "hp_col":         "KM",
+        "hint_btn":       "💡 Podpowiedź (i)",
+        "no_hint":        "💡 Brak podpowiedzi!",
+        "already_used":   "⚠ To auto już zostało zgadnięte!",
+        "not_found":      "⚠ Nie znaleziono auta! Wpisz dokładną nazwę.",
+        "congrats":       "🎉 Poprawnie w {} próbach!",
+        "failed":         "💀 Przegrałeś! Odpowiedź:",
+        "play_again":     "Zagraj ponownie",
+        "main_menu":      "Menu główne",
+        "stats_title":    "📊 STATYSTYKI",
+        "total_games":    "Łączna liczba gier",
+        "win_rate":       "Wskaźnik wygranych",
+        "back":           "← Wróć",
+        "settings_title": "⚙️ USTAWIENIA",
+        "language_label": "Język",
+        "hint_engine":    "💡 Silnik: {}",
+        "hint_country":   "💡 Kraj: {}",
+        "hint_year":      "💡 Rok: {}",
+        "hint_brand":     "💡 Marka: {}",
+        "hint_price":     "💡 Zakres cen: ${} - ${}",
+        "8_guesses":      "Masz 8 prób",
+        "normal_lbl":     "▶ Tryb normalny",
+        "hint_lbl":       "💡 Tryb podpowiedzi",
+        "expert_lbl":     "🧠 Tryb eksperta",
+        "jdm_lbl":        "🇯🇵 Tryb JDM",
     }
 }
 
-def get_continent(country):
+def fuzzy_match(query, cars, used, limit=6):
+    query = query.strip().lower()
+    if not query:
+        return []
+    results = []
+    for car in cars:
+        if car["name"] in used:
+            continue
+        name = car["name"].lower()
+        # Direkt içeriyor mu
+        if query in name:
+            results.append((1.0, car))
+            continue
+        # Fuzzy benzerlik
+        ratio = difflib.SequenceMatcher(None, query, name).ratio()
+        # Her kelimeyi ayrı ayrı karşılaştır
+        word_ratio = max(
+            difflib.SequenceMatcher(None, query, word).ratio()
+            for word in name.split()
+        )
+        best = max(ratio, word_ratio)
+        if best >= 0.55:
+            results.append((best, car))
+    results.sort(key=lambda x: x[0], reverse=True)
+    return [car for _, car in results[:limit]]
     for continent, countries in CONTINENTS.items():
         if country in countries:
             return continent
@@ -242,9 +359,10 @@ class App(tk.Tk):
         tk.Label(self, text=self.t("title_sub"), font=("Courier New", 11), bg=BG, fg=SUBTEXT).pack(pady=(2, 30))
 
         for key, cmd in [
-            ("normal_mode",  lambda: self.start_game(False, False)),
-            ("hint_mode",    lambda: self.start_game(True,  False)),
-            ("expert_mode",  lambda: self.start_game(False, True)),
+            ("normal_mode",  lambda: self.start_game(False, False, "normal")),
+            ("hint_mode",    lambda: self.start_game(True,  False, "normal")),
+            ("expert_mode",  lambda: self.start_game(False, True,  "normal")),
+            ("jdm_mode",     lambda: self.start_game(False, False, "jdm")),
             ("stats_btn",    self.show_stats),
             ("settings_btn", self.show_settings),
         ]:
@@ -289,7 +407,7 @@ class App(tk.Tk):
 
     def show_settings(self):
         self.clear()
-        self._center(420, 300)
+        self._center(420, 340)
         tk.Label(self, text=self.t("settings_title"), font=("Courier New", 16, "bold"), bg=BG, fg=ACCENT).pack(pady=(40, 20))
 
         frame = tk.Frame(self, bg=BG2, padx=30, pady=20)
@@ -298,14 +416,18 @@ class App(tk.Tk):
         tk.Label(frame, text=self.t("language_label"), font=("Courier New", 12),
                  bg=BG2, fg=SUBTEXT).pack(anchor="w", pady=(0, 8))
 
-        lang_frame = tk.Frame(frame, bg=BG2)
-        lang_frame.pack(anchor="w")
+        lang_frame1 = tk.Frame(frame, bg=BG2)
+        lang_frame1.pack(anchor="w", pady=(0,4))
+        lang_frame2 = tk.Frame(frame, bg=BG2)
+        lang_frame2.pack(anchor="w")
 
         current_lang = self.settings.get("lang", "en")
-        for lang_code, lang_name in [("en", "English"), ("tr", "Türkçe")]:
+        langs = [("en", "English"), ("tr", "Türkçe"), ("de", "Deutsch"), ("pl", "Polski")]
+        for i, (lang_code, lang_name) in enumerate(langs):
             is_active = current_lang == lang_code
+            parent = lang_frame1 if i < 2 else lang_frame2
             tk.Button(
-                lang_frame, text=lang_name,
+                parent, text=lang_name,
                 font=("Courier New", 11, "bold"),
                 bg=ACCENT if is_active else BG3,
                 fg=BG if is_active else TEXT,
@@ -324,23 +446,25 @@ class App(tk.Tk):
         save_settings(self.settings)
         self.show_settings()
 
-    def start_game(self, hint_mode=False, expert_mode=False):
+    def start_game(self, hint_mode=False, expert_mode=False, game_mode="normal"):
         self.clear()
-        GameScreen(self, self.cars, self.stats, hint_mode, expert_mode)
+        GameScreen(self, self.cars, self.stats, hint_mode, expert_mode, game_mode)
 
 
 class GameScreen(tk.Frame):
     MAX_GUESSES = 8
 
-    def __init__(self, master, cars, stats, hint_mode, expert_mode=False):
+    def __init__(self, master, cars, stats, hint_mode, expert_mode=False, game_mode="normal"):
         super().__init__(master, bg=BG)
         self.pack(fill="both", expand=True)
         self.master      = master
-        self.cars        = cars
         self.stats       = stats
         self.hint_mode   = hint_mode
         self.expert_mode = expert_mode
-        self.target      = random.choice(cars)
+        self.game_mode   = game_mode
+        # Moda göre arabaları filtrele
+        self.cars = [c for c in cars if game_mode in c.get("modes", ["normal"])]
+        self.target      = random.choice(self.cars)
         self.guesses     = []
         self.used        = []
         self.hints_used  = 0
@@ -363,6 +487,8 @@ class GameScreen(tk.Frame):
             mode_txt = self.t("hint_lbl")
         elif self.expert_mode:
             mode_txt = self.t("expert_lbl")
+        elif self.game_mode == "jdm":
+            mode_txt = self.t("jdm_lbl")
         else:
             mode_txt = self.t("normal_lbl")
 
@@ -435,8 +561,7 @@ class GameScreen(tk.Frame):
         if not query:
             self.suggest_cars = []
             return
-        self.suggest_cars = [c for c in self.cars
-                             if query in c["name"].lower() and c["name"] not in self.used][:6]
+        self.suggest_cars = fuzzy_match(query, self.cars, self.used)
         for i, car in enumerate(self.suggest_cars):
             lbl = tk.Label(self.suggest_frame, text=car["name"],
                            font=("Courier New", 11), bg=BG2, fg=TEXT,
@@ -470,7 +595,15 @@ class GameScreen(tk.Frame):
     def _on_enter(self, e):
         if self.expert_mode:
             typed = self.search_var.get().strip()
+            # Önce tam eşleşme dene
             match = next((c for c in self.cars if c["name"].lower() == typed.lower()), None)
+            # Tam eşleşme yoksa fuzzy dene
+            if not match:
+                fuzzy = fuzzy_match(typed, self.cars, self.used, limit=1)
+                if fuzzy:
+                    ratio = difflib.SequenceMatcher(None, typed.lower(), fuzzy[0]["name"].lower()).ratio()
+                    if ratio >= 0.65:
+                        match = fuzzy[0]
             if match:
                 if match["name"] in self.used:
                     self.info_label.config(text=self.t("already_used"))
@@ -579,7 +712,7 @@ class GameScreen(tk.Frame):
 
         def play_again():
             popup.destroy()
-            self.master.start_game(hint_mode=self.hint_mode, expert_mode=self.expert_mode)
+            self.master.start_game(hint_mode=self.hint_mode, expert_mode=self.expert_mode, game_mode=self.game_mode)
 
         for txt_key, cmd in [
             ("play_again", play_again),
