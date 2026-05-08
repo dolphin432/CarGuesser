@@ -6,7 +6,10 @@
     "price": 608358,
     "country": "Italy",
     "year": 2023,
-    "hp": 1015
+    "hp": 1015,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Bugatti Chiron",
@@ -15,7 +18,10 @@
     "price": 3300000,
     "country": "France",
     "year": 2016,
-    "hp": 1500
+    "hp": 1500,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Koenigsegg Jesko",
@@ -24,7 +30,10 @@
     "price": 3000000,
     "country": "Sweden",
     "year": 2020,
-    "hp": 1600
+    "hp": 1600,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Lamborghini Huracan",
@@ -33,7 +42,10 @@
     "price": 261274,
     "country": "Italy",
     "year": 2014,
-    "hp": 640
+    "hp": 640,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Lamborghini Aventador",
@@ -42,7 +54,10 @@
     "price": 393695,
     "country": "Italy",
     "year": 2011,
-    "hp": 770
+    "hp": 770,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari SF90 Stradale",
@@ -51,7 +66,10 @@
     "price": 507328,
     "country": "Italy",
     "year": 2019,
-    "hp": 1000
+    "hp": 1000,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren P1",
@@ -60,7 +78,10 @@
     "price": 1150000,
     "country": "UK",
     "year": 2013,
-    "hp": 903
+    "hp": 903,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Pagani Huayra",
@@ -69,7 +90,10 @@
     "price": 2400000,
     "country": "Italy",
     "year": 2011,
-    "hp": 720
+    "hp": 720,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Porsche 918 Spyder",
@@ -78,7 +102,10 @@
     "price": 845000,
     "country": "Germany",
     "year": 2013,
-    "hp": 887
+    "hp": 887,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Rimac Nevera",
@@ -87,7 +114,10 @@
     "price": 2400000,
     "country": "Czech Republic",
     "year": 2021,
-    "hp": 1914
+    "hp": 1914,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Aston Martin Valkyrie",
@@ -96,7 +126,10 @@
     "price": 3000000,
     "country": "UK",
     "year": 2021,
-    "hp": 1160
+    "hp": 1160,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren Senna",
@@ -105,7 +138,10 @@
     "price": 1000000,
     "country": "UK",
     "year": 2018,
-    "hp": 800
+    "hp": 800,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari LaFerrari",
@@ -114,7 +150,10 @@
     "price": 1420000,
     "country": "Italy",
     "year": 2013,
-    "hp": 950
+    "hp": 950,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Bugatti Veyron",
@@ -123,7 +162,10 @@
     "price": 1700000,
     "country": "France",
     "year": 2005,
-    "hp": 1001
+    "hp": 1001,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Koenigsegg Agera RS",
@@ -132,7 +174,10 @@
     "price": 2100000,
     "country": "Sweden",
     "year": 2015,
-    "hp": 1360
+    "hp": 1360,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Hennessey Venom F5",
@@ -141,7 +186,10 @@
     "price": 2100000,
     "country": "USA",
     "year": 2021,
-    "hp": 1817
+    "hp": 1817,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "SSC Tuatara",
@@ -150,7 +198,10 @@
     "price": 1900000,
     "country": "USA",
     "year": 2020,
-    "hp": 1750
+    "hp": 1750,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Pagani Zonda",
@@ -159,7 +210,10 @@
     "price": 1500000,
     "country": "Italy",
     "year": 1999,
-    "hp": 555
+    "hp": 555,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren 720S",
@@ -168,7 +222,10 @@
     "price": 299000,
     "country": "UK",
     "year": 2017,
-    "hp": 720
+    "hp": 720,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari 488 Pista",
@@ -177,7 +234,10 @@
     "price": 330000,
     "country": "Italy",
     "year": 2018,
-    "hp": 710
+    "hp": 710,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Lamborghini Urus",
@@ -186,7 +246,10 @@
     "price": 229495,
     "country": "Italy",
     "year": 2018,
-    "hp": 650
+    "hp": 650,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Porsche 911 GT2 RS",
@@ -195,7 +258,10 @@
     "price": 293200,
     "country": "Germany",
     "year": 2017,
-    "hp": 700
+    "hp": 700,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Aston Martin One-77",
@@ -204,7 +270,10 @@
     "price": 1850000,
     "country": "UK",
     "year": 2009,
-    "hp": 750
+    "hp": 750,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Mercedes-AMG One",
@@ -213,7 +282,10 @@
     "price": 2720000,
     "country": "Germany",
     "year": 2022,
-    "hp": 1063
+    "hp": 1063,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Gordon Murray T.50",
@@ -222,7 +294,10 @@
     "price": 3600000,
     "country": "UK",
     "year": 2022,
-    "hp": 654
+    "hp": 654,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari F80",
@@ -231,7 +306,10 @@
     "price": 3600000,
     "country": "Italy",
     "year": 2024,
-    "hp": 1200
+    "hp": 1200,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari Daytona SP3",
@@ -240,7 +318,10 @@
     "price": 2300000,
     "country": "Italy",
     "year": 2021,
-    "hp": 840
+    "hp": 840,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari Enzo",
@@ -249,7 +330,10 @@
     "price": 1500000,
     "country": "Italy",
     "year": 2002,
-    "hp": 660
+    "hp": 660,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari F40",
@@ -258,7 +342,10 @@
     "price": 400000,
     "country": "Italy",
     "year": 1987,
-    "hp": 478
+    "hp": 478,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ferrari F50",
@@ -267,7 +354,10 @@
     "price": 550000,
     "country": "Italy",
     "year": 1995,
-    "hp": 513
+    "hp": 513,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren Speedtail",
@@ -276,7 +366,10 @@
     "price": 2300000,
     "country": "UK",
     "year": 2020,
-    "hp": 1055
+    "hp": 1055,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren F1",
@@ -285,7 +378,10 @@
     "price": 970000,
     "country": "UK",
     "year": 1992,
-    "hp": 627
+    "hp": 627,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "McLaren W1",
@@ -294,7 +390,10 @@
     "price": 2100000,
     "country": "UK",
     "year": 2024,
-    "hp": 1275
+    "hp": 1275,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Koenigsegg CC850",
@@ -303,7 +402,10 @@
     "price": 3650000,
     "country": "Sweden",
     "year": 2022,
-    "hp": 1385
+    "hp": 1385,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Koenigsegg Regera",
@@ -312,7 +414,10 @@
     "price": 1900000,
     "country": "Sweden",
     "year": 2016,
-    "hp": 1500
+    "hp": 1500,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Bugatti Centodieci",
@@ -321,7 +426,10 @@
     "price": 8900000,
     "country": "France",
     "year": 2019,
-    "hp": 1600
+    "hp": 1600,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Bugatti Divo",
@@ -330,7 +438,10 @@
     "price": 5800000,
     "country": "France",
     "year": 2018,
-    "hp": 1500
+    "hp": 1500,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Bugatti W16 Mistral",
@@ -339,7 +450,10 @@
     "price": 5000000,
     "country": "France",
     "year": 2022,
-    "hp": 1600
+    "hp": 1600,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Pagani Utopia",
@@ -348,7 +462,10 @@
     "price": 2200000,
     "country": "Italy",
     "year": 2022,
-    "hp": 864
+    "hp": 864,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Pagani Zonda HP Barchetta",
@@ -357,7 +474,11 @@
     "price": 17600000,
     "country": "Italy",
     "year": 2017,
-    "hp": 789
+    "hp": 789,
+    "modes": [
+      "normal",
+      "special"
+    ]
   },
   {
     "name": "Lamborghini Sian",
@@ -366,7 +487,10 @@
     "price": 3600000,
     "country": "Italy",
     "year": 2020,
-    "hp": 819
+    "hp": 819,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Lamborghini Veneno",
@@ -375,7 +499,11 @@
     "price": 4500000,
     "country": "Italy",
     "year": 2013,
-    "hp": 750
+    "hp": 750,
+    "modes": [
+      "normal",
+      "special"
+    ]
   },
   {
     "name": "Lamborghini Countach LPI 800-4",
@@ -384,7 +512,10 @@
     "price": 2640000,
     "country": "Italy",
     "year": 2021,
-    "hp": 814
+    "hp": 814,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Porsche Carrera GT",
@@ -393,7 +524,10 @@
     "price": 440000,
     "country": "Germany",
     "year": 2003,
-    "hp": 612
+    "hp": 612,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Porsche 911 GT3 RS",
@@ -402,7 +536,10 @@
     "price": 225250,
     "country": "Germany",
     "year": 2022,
-    "hp": 525
+    "hp": 525,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Aston Martin Valhalla",
@@ -411,7 +548,10 @@
     "price": 1300000,
     "country": "UK",
     "year": 2023,
-    "hp": 1000
+    "hp": 1000,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Aston Martin Victor",
@@ -420,7 +560,11 @@
     "price": 5000000,
     "country": "UK",
     "year": 2020,
-    "hp": 847
+    "hp": 847,
+    "modes": [
+      "normal",
+      "special"
+    ]
   },
   {
     "name": "Mercedes-AMG GT Black Series",
@@ -429,7 +573,10 @@
     "price": 325000,
     "country": "Germany",
     "year": 2020,
-    "hp": 730
+    "hp": 730,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Lotus Evija",
@@ -438,7 +585,10 @@
     "price": 2300000,
     "country": "UK",
     "year": 2020,
-    "hp": 2000
+    "hp": 2000,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Ford GT",
@@ -447,7 +597,10 @@
     "price": 500000,
     "country": "USA",
     "year": 2017,
-    "hp": 647
+    "hp": 647,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Zenvo TSR-S",
@@ -456,7 +609,10 @@
     "price": 1800000,
     "country": "Denmark",
     "year": 2018,
-    "hp": 1177
+    "hp": 1177,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "W Motors Lykan Hypersport",
@@ -465,7 +621,10 @@
     "price": 3400000,
     "country": "UAE",
     "year": 2013,
-    "hp": 780
+    "hp": 780,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Pininfarina Battista",
@@ -474,7 +633,10 @@
     "price": 2200000,
     "country": "Italy",
     "year": 2020,
-    "hp": 1900
+    "hp": 1900,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "De Tomaso P72",
@@ -483,7 +645,10 @@
     "price": 850000,
     "country": "Italy",
     "year": 2020,
-    "hp": 700
+    "hp": 700,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "GMA T.33",
@@ -492,7 +657,10 @@
     "price": 2100000,
     "country": "UK",
     "year": 2022,
-    "hp": 607
+    "hp": 607,
+    "modes": [
+      "normal"
+    ]
   },
   {
     "name": "Nissan GT-R Nismo",
@@ -501,7 +669,11 @@
     "price": 212985,
     "country": "Japan",
     "year": 2007,
-    "hp": 600
+    "hp": 600,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Lexus LFA",
@@ -510,7 +682,11 @@
     "price": 375000,
     "country": "Japan",
     "year": 2010,
-    "hp": 553
+    "hp": 553,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Honda NSX",
@@ -519,7 +695,11 @@
     "price": 157500,
     "country": "Japan",
     "year": 2016,
-    "hp": 573
+    "hp": 573,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Toyota GR Supra",
@@ -528,7 +708,11 @@
     "price": 56180,
     "country": "Japan",
     "year": 2019,
-    "hp": 382
+    "hp": 382,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Mazda RX-7",
@@ -537,7 +721,11 @@
     "price": 35000,
     "country": "Japan",
     "year": 1992,
-    "hp": 255
+    "hp": 255,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Nissan 370Z Nismo",
@@ -546,7 +734,11 @@
     "price": 46090,
     "country": "Japan",
     "year": 2009,
-    "hp": 350
+    "hp": 350,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Toyota GR86",
@@ -555,7 +747,11 @@
     "price": 29250,
     "country": "Japan",
     "year": 2021,
-    "hp": 228
+    "hp": 228,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Subaru WRX STI",
@@ -564,7 +760,11 @@
     "price": 36995,
     "country": "Japan",
     "year": 2014,
-    "hp": 305
+    "hp": 305,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Mitsubishi Lancer Evolution",
@@ -573,7 +773,11 @@
     "price": 38000,
     "country": "Japan",
     "year": 2007,
-    "hp": 291
+    "hp": 291,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
   },
   {
     "name": "Aspark Owl",
@@ -582,6 +786,1138 @@
     "price": 3600000,
     "country": "Japan",
     "year": 2020,
-    "hp": 1985
+    "hp": 1985,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Skyline GT-R R34",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 100000,
+    "country": "Japan",
+    "year": 1999,
+    "hp": 280,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Skyline GT-R R33",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 45000,
+    "country": "Japan",
+    "year": 1995,
+    "hp": 276,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Skyline GT-R R32",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 35000,
+    "country": "Japan",
+    "year": 1989,
+    "hp": 276,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota Supra MK4",
+    "brand": "Toyota",
+    "engine": "V6",
+    "price": 80000,
+    "country": "Japan",
+    "year": 1993,
+    "hp": 320,
+    "modes": [
+      "normal",
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mazda RX-8",
+    "brand": "Mazda",
+    "engine": "V6",
+    "price": 15000,
+    "country": "Japan",
+    "year": 2003,
+    "hp": 238,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda S2000",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 25000,
+    "country": "Japan",
+    "year": 1999,
+    "hp": 240,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Civic Type R",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 44995,
+    "country": "Japan",
+    "year": 2023,
+    "hp": 315,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mitsubishi Eclipse",
+    "brand": "Mitsubishi",
+    "engine": "V6",
+    "price": 12000,
+    "country": "Japan",
+    "year": 1995,
+    "hp": 210,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Subaru Impreza WRX STI",
+    "brand": "Subaru",
+    "engine": "Flat-6",
+    "price": 42000,
+    "country": "Japan",
+    "year": 2004,
+    "hp": 300,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota MR2",
+    "brand": "Toyota",
+    "engine": "V6",
+    "price": 18000,
+    "country": "Japan",
+    "year": 1999,
+    "hp": 197,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Silvia S15",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 20000,
+    "country": "Japan",
+    "year": 1999,
+    "hp": 250,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mazda MX-5 Miata",
+    "brand": "Mazda",
+    "engine": "V6",
+    "price": 29000,
+    "country": "Japan",
+    "year": 2023,
+    "hp": 181,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota GR Yaris",
+    "brand": "Toyota",
+    "engine": "V6",
+    "price": 39900,
+    "country": "Japan",
+    "year": 2020,
+    "hp": 257,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Subaru BRZ",
+    "brand": "Subaru",
+    "engine": "Flat-6",
+    "price": 30495,
+    "country": "Japan",
+    "year": 2022,
+    "hp": 228,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Integra Type R",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 40000,
+    "country": "Japan",
+    "year": 2001,
+    "hp": 220,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan 240SX",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 10000,
+    "country": "Japan",
+    "year": 1994,
+    "hp": 155,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mitsubishi 3000GT",
+    "brand": "Mitsubishi",
+    "engine": "V6",
+    "price": 15000,
+    "country": "Japan",
+    "year": 1997,
+    "hp": 320,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota Celica GT-Four",
+    "brand": "Toyota",
+    "engine": "V6",
+    "price": 20000,
+    "country": "Japan",
+    "year": 1999,
+    "hp": 242,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Beat",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 8000,
+    "country": "Japan",
+    "year": 1991,
+    "hp": 64,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Suzuki Cappuccino",
+    "brand": "Suzuki",
+    "engine": "V6",
+    "price": 7000,
+    "country": "Japan",
+    "year": 1991,
+    "hp": 63,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Ferrari 296 GTB",
+    "brand": "Ferrari",
+    "engine": "V6",
+    "price": 323000,
+    "country": "Italy",
+    "year": 2021,
+    "hp": 830,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 812 Superfast",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 335000,
+    "country": "Italy",
+    "year": 2017,
+    "hp": 789,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari Roma",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 222000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 612,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari Portofino M",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 215000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 612,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Huracan Sterrato",
+    "brand": "Lamborghini",
+    "engine": "V10",
+    "price": 278000,
+    "country": "Italy",
+    "year": 2023,
+    "hp": 610,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Urus Performante",
+    "brand": "Lamborghini",
+    "engine": "V8",
+    "price": 267000,
+    "country": "Italy",
+    "year": 2022,
+    "hp": 666,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren 765LT",
+    "brand": "McLaren",
+    "engine": "V8",
+    "price": 358000,
+    "country": "UK",
+    "year": 2020,
+    "hp": 765,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren Artura",
+    "brand": "McLaren",
+    "engine": "V6",
+    "price": 237000,
+    "country": "UK",
+    "year": 2021,
+    "hp": 671,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren Elva",
+    "brand": "McLaren",
+    "engine": "V8",
+    "price": 1700000,
+    "country": "UK",
+    "year": 2020,
+    "hp": 804,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 911 Turbo S",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 207000,
+    "country": "Germany",
+    "year": 2020,
+    "hp": 640,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche Taycan Turbo S",
+    "brand": "Porsche",
+    "engine": "Electric",
+    "price": 185000,
+    "country": "Germany",
+    "year": 2019,
+    "hp": 761,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 911 GT3",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 161100,
+    "country": "Germany",
+    "year": 2021,
+    "hp": 502,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin DBS 770 Ultimate",
+    "brand": "Aston Martin",
+    "engine": "V12",
+    "price": 340000,
+    "country": "UK",
+    "year": 2023,
+    "hp": 770,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin DB12",
+    "brand": "Aston Martin",
+    "engine": "V8",
+    "price": 245000,
+    "country": "UK",
+    "year": 2023,
+    "hp": 671,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bentley Continental GT Speed",
+    "brand": "Bentley",
+    "engine": "W12",
+    "price": 274900,
+    "country": "UK",
+    "year": 2021,
+    "hp": 650,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bentley Mulliner Bacalar",
+    "brand": "Bentley",
+    "engine": "W12",
+    "price": 2000000,
+    "country": "UK",
+    "year": 2020,
+    "hp": 650,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rolls-Royce Phantom",
+    "brand": "Rolls-Royce",
+    "engine": "V12",
+    "price": 460000,
+    "country": "UK",
+    "year": 2017,
+    "hp": 563,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rolls-Royce Ghost",
+    "brand": "Rolls-Royce",
+    "engine": "V12",
+    "price": 332500,
+    "country": "UK",
+    "year": 2020,
+    "hp": 563,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rolls-Royce Wraith",
+    "brand": "Rolls-Royce",
+    "engine": "V12",
+    "price": 330000,
+    "country": "UK",
+    "year": 2013,
+    "hp": 624,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz SLR McLaren",
+    "brand": "Mercedes-Benz",
+    "engine": "V8",
+    "price": 450000,
+    "country": "Germany",
+    "year": 2003,
+    "hp": 617,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz CLK GTR",
+    "brand": "Mercedes-Benz",
+    "engine": "V12",
+    "price": 1500000,
+    "country": "Germany",
+    "year": 1997,
+    "hp": 604,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "BMW M3 CSL",
+    "brand": "BMW",
+    "engine": "V6",
+    "price": 80000,
+    "country": "Germany",
+    "year": 2003,
+    "hp": 360,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BMW M4 CSL",
+    "brand": "BMW",
+    "engine": "V6",
+    "price": 140000,
+    "country": "Germany",
+    "year": 2022,
+    "hp": 543,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BMW M8 Competition",
+    "brand": "BMW",
+    "engine": "V8",
+    "price": 130000,
+    "country": "Germany",
+    "year": 2019,
+    "hp": 617,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Alfa Romeo 4C",
+    "brand": "Alfa Romeo",
+    "engine": "V6",
+    "price": 55000,
+    "country": "Italy",
+    "year": 2013,
+    "hp": 237,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Alfa Romeo Giulia GTA",
+    "brand": "Alfa Romeo",
+    "engine": "V6",
+    "price": 175000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 540,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Maserati MC20",
+    "brand": "Maserati",
+    "engine": "V6",
+    "price": 210000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 621,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Maserati GranTurismo Folgore",
+    "brand": "Maserati",
+    "engine": "Electric",
+    "price": 220000,
+    "country": "Italy",
+    "year": 2022,
+    "hp": 761,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Sesto Elemento",
+    "brand": "Lamborghini",
+    "engine": "V10",
+    "price": 2800000,
+    "country": "Italy",
+    "year": 2010,
+    "hp": 570,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Porsche 911 GT1 Strassenversion",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 1500000,
+    "country": "Germany",
+    "year": 1997,
+    "hp": 544,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "McLaren F1 LM",
+    "brand": "McLaren",
+    "engine": "V12",
+    "price": 10000000,
+    "country": "UK",
+    "year": 1995,
+    "hp": 680,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Ferrari F50 GT",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 3000000,
+    "country": "Italy",
+    "year": 1996,
+    "hp": 750,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Koenigsegg CCXR Trevita",
+    "brand": "Koenigsegg",
+    "engine": "V8",
+    "price": 4800000,
+    "country": "Sweden",
+    "year": 2009,
+    "hp": 1018,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Chevrolet Corvette Z06",
+    "brand": "Chevrolet",
+    "engine": "V8",
+    "price": 109295,
+    "country": "USA",
+    "year": 2023,
+    "hp": 670,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chevrolet Corvette ZR1",
+    "brand": "Chevrolet",
+    "engine": "V8",
+    "price": 150000,
+    "country": "USA",
+    "year": 2024,
+    "hp": 1064,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Dodge Viper ACR",
+    "brand": "Dodge",
+    "engine": "V10",
+    "price": 120000,
+    "country": "USA",
+    "year": 2016,
+    "hp": 645,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ford Mustang Shelby GT500",
+    "brand": "Ford",
+    "engine": "V8",
+    "price": 80000,
+    "country": "USA",
+    "year": 2020,
+    "hp": 760,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Cadillac CT5-V Blackwing",
+    "brand": "Cadillac",
+    "engine": "V8",
+    "price": 84990,
+    "country": "USA",
+    "year": 2022,
+    "hp": 668,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Hennessey Venom GT",
+    "brand": "Hennessey",
+    "engine": "V8",
+    "price": 1200000,
+    "country": "USA",
+    "year": 2011,
+    "hp": 1244,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Saleen S7 Twin Turbo",
+    "brand": "Saleen",
+    "engine": "V8",
+    "price": 585000,
+    "country": "USA",
+    "year": 2005,
+    "hp": 750,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Shelby SuperCars Ultimate Aero",
+    "brand": "SSC",
+    "engine": "V8",
+    "price": 654400,
+    "country": "USA",
+    "year": 2006,
+    "hp": 1183,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tesla Model S Plaid",
+    "brand": "Tesla",
+    "engine": "Electric",
+    "price": 89990,
+    "country": "USA",
+    "year": 2021,
+    "hp": 1020,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tesla Roadster",
+    "brand": "Tesla",
+    "engine": "Electric",
+    "price": 200000,
+    "country": "USA",
+    "year": 2023,
+    "hp": 1000,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BYD Yangwang U9",
+    "brand": "BYD",
+    "engine": "Electric",
+    "price": 233000,
+    "country": "China",
+    "year": 2024,
+    "hp": 1287,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lucid Air Sapphire",
+    "brand": "Lucid",
+    "engine": "Electric",
+    "price": 249000,
+    "country": "USA",
+    "year": 2022,
+    "hp": 1234,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Nio EP9",
+    "brand": "Nio",
+    "engine": "Electric",
+    "price": 1480000,
+    "country": "China",
+    "year": 2016,
+    "hp": 1341,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rimac C_Two",
+    "brand": "Rimac",
+    "engine": "Electric",
+    "price": 2000000,
+    "country": "Czech Republic",
+    "year": 2018,
+    "hp": 1914,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Automobili Estrema Fulminea",
+    "brand": "Estrema",
+    "engine": "Electric",
+    "price": 2500000,
+    "country": "Italy",
+    "year": 2021,
+    "hp": 2040,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bugatti Bolide",
+    "brand": "Bugatti",
+    "engine": "W16",
+    "price": 4700000,
+    "country": "France",
+    "year": 2020,
+    "hp": 1825,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Koenigsegg Gemera",
+    "brand": "Koenigsegg",
+    "engine": "V8",
+    "price": 1700000,
+    "country": "Sweden",
+    "year": 2020,
+    "hp": 1700,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Koenigsegg One:1",
+    "brand": "Koenigsegg",
+    "engine": "V8",
+    "price": 2000000,
+    "country": "Sweden",
+    "year": 2014,
+    "hp": 1341,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Pagani Imola",
+    "brand": "Pagani",
+    "engine": "V12",
+    "price": 5400000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 827,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 250 GTO",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 70000000,
+    "country": "Italy",
+    "year": 1962,
+    "hp": 302,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Lamborghini Diablo",
+    "brand": "Lamborghini",
+    "engine": "V12",
+    "price": 240000,
+    "country": "Italy",
+    "year": 1990,
+    "hp": 492,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Murcielago",
+    "brand": "Lamborghini",
+    "engine": "V12",
+    "price": 350000,
+    "country": "Italy",
+    "year": 2001,
+    "hp": 580,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Gallardo",
+    "brand": "Lamborghini",
+    "engine": "V10",
+    "price": 180000,
+    "country": "Italy",
+    "year": 2003,
+    "hp": 500,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 458 Italia",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 230000,
+    "country": "Italy",
+    "year": 2009,
+    "hp": 562,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 599 GTO",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 440000,
+    "country": "Italy",
+    "year": 2010,
+    "hp": 670,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren 675LT",
+    "brand": "McLaren",
+    "engine": "V8",
+    "price": 349500,
+    "country": "UK",
+    "year": 2015,
+    "hp": 666,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren 600LT",
+    "brand": "McLaren",
+    "engine": "V8",
+    "price": 240000,
+    "country": "UK",
+    "year": 2018,
+    "hp": 592,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin DB11",
+    "brand": "Aston Martin",
+    "engine": "V12",
+    "price": 205000,
+    "country": "UK",
+    "year": 2016,
+    "hp": 600,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin Vantage V12",
+    "brand": "Aston Martin",
+    "engine": "V12",
+    "price": 185000,
+    "country": "UK",
+    "year": 2023,
+    "hp": 690,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 959",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 200000,
+    "country": "Germany",
+    "year": 1986,
+    "hp": 444,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz SLS AMG",
+    "brand": "Mercedes-Benz",
+    "engine": "V8",
+    "price": 185000,
+    "country": "Germany",
+    "year": 2009,
+    "hp": 571,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz AMG GT R",
+    "brand": "Mercedes-AMG",
+    "engine": "V8",
+    "price": 157995,
+    "country": "Germany",
+    "year": 2016,
+    "hp": 577,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BMW M5 CS",
+    "brand": "BMW",
+    "engine": "V8",
+    "price": 142000,
+    "country": "Germany",
+    "year": 2021,
+    "hp": 635,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Centenario",
+    "brand": "Lamborghini",
+    "engine": "V12",
+    "price": 2600000,
+    "country": "Italy",
+    "year": 2016,
+    "hp": 770,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Ferrari J50",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 2800000,
+    "country": "Italy",
+    "year": 2016,
+    "hp": 690,
+    "modes": [
+      "normal",
+      "special"
+    ]
+  },
+  {
+    "name": "Bugatti EB110",
+    "brand": "Bugatti",
+    "engine": "V12",
+    "price": 600000,
+    "country": "France",
+    "year": 1991,
+    "hp": 603,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Jaguar XJ220",
+    "brand": "Jaguar",
+    "engine": "V6",
+    "price": 650000,
+    "country": "UK",
+    "year": 1992,
+    "hp": 542,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Vector W8",
+    "brand": "Vector",
+    "engine": "V8",
+    "price": 450000,
+    "country": "USA",
+    "year": 1989,
+    "hp": 625,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Noble M600",
+    "brand": "Noble",
+    "engine": "V8",
+    "price": 350000,
+    "country": "UK",
+    "year": 2009,
+    "hp": 650,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ultima Evolution",
+    "brand": "Ultima",
+    "engine": "V8",
+    "price": 120000,
+    "country": "UK",
+    "year": 2015,
+    "hp": 1020,
+    "modes": [
+      "normal"
+    ]
   }
 ]
