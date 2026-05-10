@@ -35,7 +35,8 @@ LANGUAGES = {
         "normal_mode":    "▶  Normal Mode",
         "hint_mode":      "💡  Hint Mode",
         "expert_mode":    "🧠  Expert Mode",
-        "jdm_mode":       "🇯🇵  JDM Mode",
+        "classic_mode":   "⭐  Classic Mode",
+        "classic_lbl":    "⭐ Classic Mode",
         "stats_btn":      "📊  Statistics",
         "settings_btn":   "⚙️  Settings",
         "guesses_left":   "Guess {}/{}",
@@ -57,7 +58,9 @@ LANGUAGES = {
         "failed":         "💀 You lost! Answer:",
         "play_again":     "Play Again",
         "main_menu":      "Main Menu",
-        "stats_title":    "📊 STATISTICS",
+        "stats_normal":   "Normal Mode",
+        "stats_classic":  "Classic Mode",
+        "stats_expert":   "Expert Mode",
         "total_games":    "Total Games",
         "win_rate":       "Win Rate",
         "back":           "← Back",
@@ -79,7 +82,8 @@ LANGUAGES = {
         "normal_mode":    "▶  Normal Mod",
         "hint_mode":      "💡  İpucu Modu",
         "expert_mode":    "🧠  Uzman Mod",
-        "jdm_mode":       "🇯🇵  JDM Modu",
+        "classic_mode":   "⭐  Klasik Mod",
+        "classic_lbl":    "⭐ Klasik Mod",
         "stats_btn":      "📊  İstatistikler",
         "settings_btn":   "⚙️  Ayarlar",
         "guesses_left":   "Tahmin {}/{}",
@@ -101,7 +105,9 @@ LANGUAGES = {
         "failed":         "💀 Bilemedin! Cevap:",
         "play_again":     "Tekrar Oyna",
         "main_menu":      "Ana Menü",
-        "stats_title":    "📊 İSTATİSTİKLER",
+        "stats_normal":   "Normal Mod",
+        "stats_classic":  "Klasik Mod",
+        "stats_expert":   "Uzman Mod",
         "total_games":    "Toplam Oyun",
         "win_rate":       "Kazanma Oranı",
         "back":           "← Geri",
@@ -123,7 +129,8 @@ LANGUAGES = {
         "normal_mode":    "▶  Normaler Modus",
         "hint_mode":      "💡  Hinweis-Modus",
         "expert_mode":    "🧠  Experten-Modus",
-        "jdm_mode":       "🇯🇵  JDM-Modus",
+        "classic_mode":   "⭐  Klassischer Modus",
+        "classic_lbl":    "⭐ Klassischer Modus",
         "stats_btn":      "📊  Statistiken",
         "settings_btn":   "⚙️  Einstellungen",
         "guesses_left":   "Versuch {}/{}",
@@ -145,7 +152,9 @@ LANGUAGES = {
         "failed":         "💀 Verloren! Antwort:",
         "play_again":     "Nochmal spielen",
         "main_menu":      "Hauptmenü",
-        "stats_title":    "📊 STATISTIKEN",
+        "stats_normal":   "Normaler Modus",
+        "stats_classic":  "Klassischer Modus",
+        "stats_expert":   "Experten-Modus",
         "total_games":    "Spiele gesamt",
         "win_rate":       "Gewinnrate",
         "back":           "← Zurück",
@@ -167,7 +176,8 @@ LANGUAGES = {
         "normal_mode":    "▶  Tryb normalny",
         "hint_mode":      "💡  Tryb podpowiedzi",
         "expert_mode":    "🧠  Tryb eksperta",
-        "jdm_mode":       "🇯🇵  Tryb JDM",
+        "classic_mode":   "⭐  Tryb klasyczny",
+        "classic_lbl":    "⭐ Tryb klasyczny",
         "stats_btn":      "📊  Statystyki",
         "settings_btn":   "⚙️  Ustawienia",
         "guesses_left":   "Próba {}/{}",
@@ -189,7 +199,9 @@ LANGUAGES = {
         "failed":         "💀 Przegrałeś! Odpowiedź:",
         "play_again":     "Zagraj ponownie",
         "main_menu":      "Menu główne",
-        "stats_title":    "📊 STATYSTYKI",
+        "stats_normal":   "Tryb normalny",
+        "stats_classic":  "Tryb klasyczny",
+        "stats_expert":   "Tryb eksperta",
         "total_games":    "Łączna liczba gier",
         "win_rate":       "Wskaźnik wygranych",
         "back":           "← Wróć",
@@ -233,6 +245,8 @@ def fuzzy_match(query, cars, used, limit=6):
             results.append((best, car))
     results.sort(key=lambda x: x[0], reverse=True)
     return [car for _, car in results[:limit]]
+
+def get_continent(country):
     for continent, countries in CONTINENTS.items():
         if country in countries:
             return continent
@@ -249,7 +263,12 @@ def load_stats():
     if os.path.exists(path):
         with open(path, "r") as f:
             return json.load(f)
-    return {"total": 0, "wins": 0}
+    return {
+        "total": 0, "wins": 0,
+        "normal": {"total": 0, "wins": 0},
+        "classic": {"total": 0, "wins": 0},
+        "expert": {"total": 0, "wins": 0},
+    }
 
 def save_stats(stats):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -360,6 +379,7 @@ class App(tk.Tk):
 
         for key, cmd in [
             ("normal_mode",  lambda: self.start_game(False, False, "normal")),
+            ("classic_mode", lambda: self.start_game(False, False, "classic")),
             ("hint_mode",    lambda: self.start_game(True,  False, "normal")),
             ("expert_mode",  lambda: self.start_game(False, True,  "normal")),
             ("jdm_mode",     lambda: self.start_game(False, False, "jdm")),
@@ -384,26 +404,40 @@ class App(tk.Tk):
 
     def show_stats(self):
         self.clear()
-        self._center(420, 320)
-        tk.Label(self, text=self.t("stats_title"), font=("Courier New", 16, "bold"), bg=BG, fg=ACCENT).pack(pady=(40, 20))
+        self._center(480, 420)
+        tk.Label(self, text=self.t("stats_title"), font=("Courier New", 16, "bold"), bg=BG, fg=ACCENT).pack(pady=(30, 16))
 
         total = self.stats.get("total", 0)
         wins  = self.stats.get("wins", 0)
         rate  = f"%{int(wins/total*100)}" if total > 0 else "-%"
 
-        frame = tk.Frame(self, bg=BG2, padx=40, pady=20)
-        frame.pack(padx=40)
+        frame = tk.Frame(self, bg=BG2, padx=30, pady=16)
+        frame.pack(padx=30, fill="x")
 
+        # Genel istatistik
         for label_key, val in [(self.t("total_games"), str(total)), (self.t("win_rate"), rate)]:
             row = tk.Frame(frame, bg=BG2)
-            row.pack(fill="x", pady=8)
-            tk.Label(row, text=label_key, font=("Courier New", 12), bg=BG2, fg=SUBTEXT, anchor="w").pack(side="left")
-            tk.Label(row, text=val, font=("Courier New", 14, "bold"), bg=BG2, fg=ACCENT, anchor="e").pack(side="right")
+            row.pack(fill="x", pady=4)
+            tk.Label(row, text=label_key, font=("Courier New", 11), bg=BG2, fg=SUBTEXT, anchor="w").pack(side="left")
+            tk.Label(row, text=val, font=("Courier New", 13, "bold"), bg=BG2, fg=ACCENT, anchor="e").pack(side="right")
+
+        tk.Frame(frame, bg=BORDER, height=1).pack(fill="x", pady=10)
+
+        # Mod bazlı istatistikler
+        for mode_key, label in [("normal", self.t("stats_normal")), ("classic", self.t("stats_classic")), ("expert", self.t("stats_expert"))]:
+            mode_stats = self.stats.get(mode_key, {"total": 0, "wins": 0})
+            mt = mode_stats.get("total", 0)
+            mw = mode_stats.get("wins", 0)
+            mr = f"%{int(mw/mt*100)}" if mt > 0 else "-%"
+            row = tk.Frame(frame, bg=BG2)
+            row.pack(fill="x", pady=3)
+            tk.Label(row, text=label, font=("Courier New", 10), bg=BG2, fg=SUBTEXT, anchor="w").pack(side="left")
+            tk.Label(row, text=f"{mt} oyun  {mr}", font=("Courier New", 11, "bold"), bg=BG2, fg=ACCENT, anchor="e").pack(side="right")
 
         tk.Button(self, text=self.t("back"), font=("Courier New", 11),
                   bg=BG3, fg=TEXT, activebackground=GRAY, activeforeground=TEXT,
                   relief="flat", bd=0, padx=20, pady=8, cursor="hand2",
-                  command=self.show_menu).pack(pady=24)
+                  command=self.show_menu).pack(pady=20)
 
     def show_settings(self):
         self.clear()
@@ -463,7 +497,10 @@ class GameScreen(tk.Frame):
         self.expert_mode = expert_mode
         self.game_mode   = game_mode
         # Moda göre arabaları filtrele
-        self.cars = [c for c in cars if game_mode in c.get("modes", ["normal"])]
+        if game_mode == "classic":
+            self.cars = [c for c in cars if "normal" in c.get("modes", ["normal"])][:65]
+        else:
+            self.cars = [c for c in cars if game_mode in c.get("modes", ["normal"])]
         self.target      = random.choice(self.cars)
         self.guesses     = []
         self.used        = []
@@ -489,6 +526,8 @@ class GameScreen(tk.Frame):
             mode_txt = self.t("expert_lbl")
         elif self.game_mode == "jdm":
             mode_txt = self.t("jdm_lbl")
+        elif self.game_mode == "classic":
+            mode_txt = self.t("classic_lbl")
         else:
             mode_txt = self.t("normal_lbl")
 
@@ -637,12 +676,22 @@ class GameScreen(tk.Frame):
         self.turn_label.config(text=self.t("guesses_left", min(turn + 1, self.MAX_GUESSES), self.MAX_GUESSES))
         if all(v == "green" for v in result.values()):
             self.won = True
-            self.stats["total"] += 1
-            self.stats["wins"]  += 1
+            self.stats["total"] = self.stats.get("total", 0) + 1
+            self.stats["wins"]  = self.stats.get("wins", 0) + 1
+            # Mod istatistiği
+            stat_key = "expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal")
+            if stat_key not in self.stats:
+                self.stats[stat_key] = {"total": 0, "wins": 0}
+            self.stats[stat_key]["total"] += 1
+            self.stats[stat_key]["wins"]  += 1
             save_stats(self.stats)
             self._end_screen(True, turn)
         elif turn >= self.MAX_GUESSES:
-            self.stats["total"] += 1
+            self.stats["total"] = self.stats.get("total", 0) + 1
+            stat_key = "expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal")
+            if stat_key not in self.stats:
+                self.stats[stat_key] = {"total": 0, "wins": 0}
+            self.stats[stat_key]["total"] += 1
             save_stats(self.stats)
             self._end_screen(False, turn)
 
