@@ -19,7 +19,7 @@ TEXT    = "#f0f0f0"
 SUBTEXT = "#888888"
 BORDER  = "#2a2a2a"
 
-ENGINE_ORDER = ["V6", "Flat-6", "V8", "V10", "V12", "W16", "Electric"]
+ENGINE_ORDER = ["I3", "I4", "Flat-4", "I5", "I6", "V6", "Flat-6", "V8", "V10", "V12", "V16", "W12", "W16", "Rotary", "Electric"]
 
 CONTINENTS = {
     "Europe": ["Italy", "Germany", "UK", "France", "Sweden", "Austria",
@@ -75,7 +75,11 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normal Mode",
         "hint_lbl":       "💡 Hint Mode",
         "expert_lbl":     "🧠 Expert Mode",
+        "jdm_mode":       "🇯🇵  JDM Mode",
         "jdm_lbl":        "🇯🇵 JDM Mode",
+        "unknown_mode":   "🔍  Unknown Cars Mode",
+        "unknown_lbl":    "🔍 Unknown Cars Mode",
+        "stats_title":    "📊 STATISTICS",
     },
     "tr": {
         "title_sub":      "Arabayı Bul!",
@@ -84,6 +88,10 @@ LANGUAGES = {
         "expert_mode":    "🧠  Uzman Mod",
         "classic_mode":   "⭐  Klasik Mod",
         "classic_lbl":    "⭐ Klasik Mod",
+        "jdm_mode":       "🇯🇵  JDM Modu",
+        "jdm_lbl":        "🇯🇵 JDM Modu",
+        "unknown_mode":   "🔍  Az Bilinenler Modu",
+        "unknown_lbl":    "🔍 Az Bilinenler Modu",
         "stats_btn":      "📊  İstatistikler",
         "settings_btn":   "⚙️  Ayarlar",
         "guesses_left":   "Tahmin {}/{}",
@@ -105,6 +113,7 @@ LANGUAGES = {
         "failed":         "💀 Bilemedin! Cevap:",
         "play_again":     "Tekrar Oyna",
         "main_menu":      "Ana Menü",
+        "stats_title":    "📊 İSTATİSTİKLER",
         "stats_normal":   "Normal Mod",
         "stats_classic":  "Klasik Mod",
         "stats_expert":   "Uzman Mod",
@@ -122,7 +131,6 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normal Mod",
         "hint_lbl":       "💡 İpucu Modu",
         "expert_lbl":     "🧠 Uzman Mod",
-        "jdm_lbl":        "🇯🇵 JDM Modu",
     },
     "de": {
         "title_sub":      "Rate das Auto!",
@@ -131,6 +139,10 @@ LANGUAGES = {
         "expert_mode":    "🧠  Experten-Modus",
         "classic_mode":   "⭐  Klassischer Modus",
         "classic_lbl":    "⭐ Klassischer Modus",
+        "jdm_mode":       "🇯🇵  JDM-Modus",
+        "jdm_lbl":        "🇯🇵 JDM-Modus",
+        "unknown_mode":   "🔍  Unbekannte Autos",
+        "unknown_lbl":    "🔍 Unbekannte Autos",
         "stats_btn":      "📊  Statistiken",
         "settings_btn":   "⚙️  Einstellungen",
         "guesses_left":   "Versuch {}/{}",
@@ -152,6 +164,7 @@ LANGUAGES = {
         "failed":         "💀 Verloren! Antwort:",
         "play_again":     "Nochmal spielen",
         "main_menu":      "Hauptmenü",
+        "stats_title":    "📊 STATISTIKEN",
         "stats_normal":   "Normaler Modus",
         "stats_classic":  "Klassischer Modus",
         "stats_expert":   "Experten-Modus",
@@ -169,7 +182,6 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normaler Modus",
         "hint_lbl":       "💡 Hinweis-Modus",
         "expert_lbl":     "🧠 Experten-Modus",
-        "jdm_lbl":        "🇯🇵 JDM-Modus",
     },
     "pl": {
         "title_sub":      "Zgadnij auto!",
@@ -178,6 +190,10 @@ LANGUAGES = {
         "expert_mode":    "🧠  Tryb eksperta",
         "classic_mode":   "⭐  Tryb klasyczny",
         "classic_lbl":    "⭐ Tryb klasyczny",
+        "jdm_mode":       "🇯🇵  Tryb JDM",
+        "jdm_lbl":        "🇯🇵 Tryb JDM",
+        "unknown_mode":   "🔍  Nieznane Auta",
+        "unknown_lbl":    "🔍 Nieznane Auta",
         "stats_btn":      "📊  Statystyki",
         "settings_btn":   "⚙️  Ustawienia",
         "guesses_left":   "Próba {}/{}",
@@ -199,6 +215,7 @@ LANGUAGES = {
         "failed":         "💀 Przegrałeś! Odpowiedź:",
         "play_again":     "Zagraj ponownie",
         "main_menu":      "Menu główne",
+        "stats_title":    "📊 STATYSTYKI",
         "stats_normal":   "Tryb normalny",
         "stats_classic":  "Tryb klasyczny",
         "stats_expert":   "Tryb eksperta",
@@ -216,7 +233,108 @@ LANGUAGES = {
         "normal_lbl":     "▶ Tryb normalny",
         "hint_lbl":       "💡 Tryb podpowiedzi",
         "expert_lbl":     "🧠 Tryb eksperta",
-        "jdm_lbl":        "🇯🇵 Tryb JDM",
+    },
+    "zh": {
+        "title_sub":      "猜猜这辆车！",
+        "normal_mode":    "▶  普通模式",
+        "hint_mode":      "💡  提示模式",
+        "expert_mode":    "🧠  专家模式",
+        "classic_mode":   "⭐  经典模式",
+        "classic_lbl":    "⭐ 经典模式",
+        "jdm_mode":       "🇯🇵  JDM模式",
+        "jdm_lbl":        "🇯🇵 JDM模式",
+        "unknown_mode":   "🔍  冷门汽车模式",
+        "unknown_lbl":    "🔍 冷门汽车模式",
+        "stats_btn":      "📊  统计",
+        "settings_btn":   "⚙️  设置",
+        "guesses_left":   "猜测 {}/{}",
+        "correct":        "正确",
+        "close":          "接近 (同洲 / ±20%价格 / 相邻发动机)",
+        "wrong":          "错误",
+        "car_col":        "车辆",
+        "brand_col":      "品牌",
+        "engine_col":     "发动机",
+        "price_col":      "价格",
+        "country_col":    "国家",
+        "year_col":       "年份",
+        "hp_col":         "马力",
+        "hint_btn":       "💡 获取提示 (i)",
+        "no_hint":        "💡 没有更多提示！",
+        "already_used":   "⚠ 已经猜过这辆车！",
+        "not_found":      "⚠ 未找到汽车！请输入确切名称。",
+        "congrats":       "🎉 {} 次猜对！",
+        "failed":         "💀 你输了！答案：",
+        "play_again":     "再玩一次",
+        "main_menu":      "主菜单",
+        "stats_title":    "📊 统计",
+        "stats_normal":   "普通模式",
+        "stats_classic":  "经典模式",
+        "stats_expert":   "专家模式",
+        "total_games":    "总游戏数",
+        "win_rate":       "胜率",
+        "back":           "← 返回",
+        "settings_title": "⚙️ 设置",
+        "language_label": "语言",
+        "hint_engine":    "💡 发动机: {}",
+        "hint_country":   "💡 国家: {}",
+        "hint_year":      "💡 年份: {}",
+        "hint_brand":     "💡 品牌: {}",
+        "hint_price":     "💡 价格范围: ${} - ${}",
+        "8_guesses":      "你有8次猜测机会",
+        "normal_lbl":     "▶ 普通模式",
+        "hint_lbl":       "💡 提示模式",
+        "expert_lbl":     "🧠 专家模式",
+    },
+    "fr": {
+        "title_sub":      "Devinez la voiture!",
+        "normal_mode":    "▶  Mode Normal",
+        "hint_mode":      "💡  Mode Indice",
+        "expert_mode":    "🧠  Mode Expert",
+        "classic_mode":   "⭐  Mode Classique",
+        "classic_lbl":    "⭐ Mode Classique",
+        "jdm_mode":       "🇯🇵  Mode JDM",
+        "jdm_lbl":        "🇯🇵 Mode JDM",
+        "unknown_mode":   "🔍  Voitures Inconnues",
+        "unknown_lbl":    "🔍 Voitures Inconnues",
+        "stats_btn":      "📊  Statistiques",
+        "settings_btn":   "⚙️  Paramètres",
+        "guesses_left":   "Essai {}/{}",
+        "correct":        "Correct",
+        "close":          "Proche (même continent / ±20% prix / moteur adjacent)",
+        "wrong":          "Faux",
+        "car_col":        "Voiture",
+        "brand_col":      "Marque",
+        "engine_col":     "Moteur",
+        "price_col":      "Prix",
+        "country_col":    "Pays",
+        "year_col":       "Année",
+        "hp_col":         "CV",
+        "hint_btn":       "💡 Obtenir un indice (i)",
+        "no_hint":        "💡 Plus d'indices!",
+        "already_used":   "⚠ Cette voiture a déjà été devinée!",
+        "not_found":      "⚠ Voiture introuvable! Tapez le nom exact.",
+        "congrats":       "🎉 Correct en {} essais!",
+        "failed":         "💀 Perdu! Réponse:",
+        "play_again":     "Rejouer",
+        "main_menu":      "Menu Principal",
+        "stats_title":    "📊 STATISTIQUES",
+        "stats_normal":   "Mode Normal",
+        "stats_classic":  "Mode Classique",
+        "stats_expert":   "Mode Expert",
+        "total_games":    "Total des parties",
+        "win_rate":       "Taux de victoire",
+        "back":           "← Retour",
+        "settings_title": "⚙️ PARAMÈTRES",
+        "language_label": "Langue",
+        "hint_engine":    "💡 Moteur: {}",
+        "hint_country":   "💡 Pays: {}",
+        "hint_year":      "💡 Année: {}",
+        "hint_brand":     "💡 Marque: {}",
+        "hint_price":     "💡 Fourchette de prix: ${} - ${}",
+        "8_guesses":      "Vous avez 8 essais",
+        "normal_lbl":     "▶ Mode Normal",
+        "hint_lbl":       "💡 Mode Indice",
+        "expert_lbl":     "🧠 Mode Expert",
     }
 }
 
@@ -371,11 +489,11 @@ class App(tk.Tk):
 
     def show_menu(self):
         self.clear()
-        self._center(600, 640)
+        self._center(600, 720)
 
-        tk.Label(self, text="🏎", font=("Segoe UI Emoji", 48), bg=BG, fg=ACCENT).pack(pady=(40, 0))
+        tk.Label(self, text="🏎", font=("Segoe UI Emoji", 48), bg=BG, fg=ACCENT).pack(pady=(30, 0))
         tk.Label(self, text="CARGUESSER", font=("Courier New", 24, "bold"), bg=BG, fg=ACCENT).pack()
-        tk.Label(self, text=self.t("title_sub"), font=("Courier New", 11), bg=BG, fg=SUBTEXT).pack(pady=(2, 30))
+        tk.Label(self, text=self.t("title_sub"), font=("Courier New", 11), bg=BG, fg=SUBTEXT).pack(pady=(2, 20))
 
         for key, cmd in [
             ("normal_mode",  lambda: self.start_game(False, False, "normal")),
@@ -383,6 +501,7 @@ class App(tk.Tk):
             ("hint_mode",    lambda: self.start_game(True,  False, "normal")),
             ("expert_mode",  lambda: self.start_game(False, True,  "normal")),
             ("jdm_mode",     lambda: self.start_game(False, False, "jdm")),
+            ("unknown_mode", lambda: self.start_game(False, False, "unknown")),
             ("stats_btn",    self.show_stats),
             ("settings_btn", self.show_settings),
         ]:
@@ -456,10 +575,10 @@ class App(tk.Tk):
         lang_frame2.pack(anchor="w")
 
         current_lang = self.settings.get("lang", "en")
-        langs = [("en", "English"), ("tr", "Türkçe"), ("de", "Deutsch"), ("pl", "Polski")]
+        langs = [("en", "English"), ("tr", "Türkçe"), ("de", "Deutsch"), ("pl", "Polski"), ("zh", "中文"), ("fr", "Français")]
         for i, (lang_code, lang_name) in enumerate(langs):
             is_active = current_lang == lang_code
-            parent = lang_frame1 if i < 2 else lang_frame2
+            parent = lang_frame1 if i < 3 else lang_frame2
             tk.Button(
                 parent, text=lang_name,
                 font=("Courier New", 11, "bold"),
@@ -499,6 +618,8 @@ class GameScreen(tk.Frame):
         # Moda göre arabaları filtrele
         if game_mode == "classic":
             self.cars = [c for c in cars if "normal" in c.get("modes", ["normal"])][:65]
+        elif game_mode == "unknown":
+            self.cars = [c for c in cars if "unknown" in c.get("modes", [])]
         else:
             self.cars = [c for c in cars if game_mode in c.get("modes", ["normal"])]
         self.target      = random.choice(self.cars)
@@ -506,7 +627,7 @@ class GameScreen(tk.Frame):
         self.used        = []
         self.hints_used  = 0
         self.won         = False
-        master._center(1000, 720)
+        master._center(1100, 780)
         self._build_ui()
 
     def t(self, key, *args):
@@ -528,6 +649,8 @@ class GameScreen(tk.Frame):
             mode_txt = self.t("jdm_lbl")
         elif self.game_mode == "classic":
             mode_txt = self.t("classic_lbl")
+        elif self.game_mode == "unknown":
+            mode_txt = self.t("unknown_lbl")
         else:
             mode_txt = self.t("normal_lbl")
 
