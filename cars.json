@@ -254,7 +254,7 @@
   {
     "name": "Porsche 911 GT2 RS",
     "brand": "Porsche",
-    "engine": "V6",
+    "engine": "Flat-6",
     "price": 293200,
     "country": "Germany",
     "year": 2017,
@@ -278,7 +278,7 @@
   {
     "name": "Mercedes-AMG One",
     "brand": "Mercedes-AMG",
-    "engine": "V6",
+    "engine": "I6",
     "price": 2720000,
     "country": "Germany",
     "year": 2022,
@@ -665,7 +665,7 @@
   {
     "name": "Nissan GT-R Nismo",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I6",
     "price": 212985,
     "country": "Japan",
     "year": 2007,
@@ -704,7 +704,7 @@
   {
     "name": "Toyota GR Supra",
     "brand": "Toyota",
-    "engine": "V6",
+    "engine": "I6",
     "price": 56180,
     "country": "Japan",
     "year": 2019,
@@ -717,7 +717,7 @@
   {
     "name": "Mazda RX-7",
     "brand": "Mazda",
-    "engine": "V6",
+    "engine": "Rotary",
     "price": 35000,
     "country": "Japan",
     "year": 1992,
@@ -743,7 +743,7 @@
   {
     "name": "Toyota GR86",
     "brand": "Toyota",
-    "engine": "Flat-6",
+    "engine": "Flat-4",
     "price": 29250,
     "country": "Japan",
     "year": 2021,
@@ -756,7 +756,7 @@
   {
     "name": "Subaru WRX STI",
     "brand": "Subaru",
-    "engine": "Flat-6",
+    "engine": "Flat-4",
     "price": 36995,
     "country": "Japan",
     "year": 2014,
@@ -769,7 +769,7 @@
   {
     "name": "Mitsubishi Lancer Evolution",
     "brand": "Mitsubishi",
-    "engine": "V6",
+    "engine": "I4",
     "price": 38000,
     "country": "Japan",
     "year": 2007,
@@ -795,7 +795,7 @@
   {
     "name": "Nissan Skyline GT-R R34",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I6",
     "price": 100000,
     "country": "Japan",
     "year": 1999,
@@ -808,7 +808,7 @@
   {
     "name": "Nissan Skyline GT-R R33",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I6",
     "price": 45000,
     "country": "Japan",
     "year": 1995,
@@ -820,7 +820,7 @@
   {
     "name": "Nissan Skyline GT-R R32",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I6",
     "price": 35000,
     "country": "Japan",
     "year": 1989,
@@ -832,7 +832,7 @@
   {
     "name": "Toyota Supra MK4",
     "brand": "Toyota",
-    "engine": "V6",
+    "engine": "I6",
     "price": 80000,
     "country": "Japan",
     "year": 1993,
@@ -845,7 +845,7 @@
   {
     "name": "Mazda RX-8",
     "brand": "Mazda",
-    "engine": "V6",
+    "engine": "Rotary",
     "price": 15000,
     "country": "Japan",
     "year": 2003,
@@ -857,7 +857,7 @@
   {
     "name": "Honda S2000",
     "brand": "Honda",
-    "engine": "V6",
+    "engine": "I4",
     "price": 25000,
     "country": "Japan",
     "year": 1999,
@@ -869,7 +869,7 @@
   {
     "name": "Honda Civic Type R",
     "brand": "Honda",
-    "engine": "V6",
+    "engine": "I4",
     "price": 44995,
     "country": "Japan",
     "year": 2023,
@@ -881,7 +881,7 @@
   {
     "name": "Mitsubishi Eclipse",
     "brand": "Mitsubishi",
-    "engine": "V6",
+    "engine": "I4",
     "price": 12000,
     "country": "Japan",
     "year": 1995,
@@ -893,7 +893,7 @@
   {
     "name": "Subaru Impreza WRX STI",
     "brand": "Subaru",
-    "engine": "Flat-6",
+    "engine": "Flat-4",
     "price": 42000,
     "country": "Japan",
     "year": 2004,
@@ -905,7 +905,7 @@
   {
     "name": "Toyota MR2",
     "brand": "Toyota",
-    "engine": "V6",
+    "engine": "I4",
     "price": 18000,
     "country": "Japan",
     "year": 1999,
@@ -917,7 +917,7 @@
   {
     "name": "Nissan Silvia S15",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I4",
     "price": 20000,
     "country": "Japan",
     "year": 1999,
@@ -929,7 +929,7 @@
   {
     "name": "Mazda MX-5 Miata",
     "brand": "Mazda",
-    "engine": "V6",
+    "engine": "I4",
     "price": 29000,
     "country": "Japan",
     "year": 2023,
@@ -941,7 +941,7 @@
   {
     "name": "Toyota GR Yaris",
     "brand": "Toyota",
-    "engine": "V6",
+    "engine": "I3",
     "price": 39900,
     "country": "Japan",
     "year": 2020,
@@ -953,7 +953,7 @@
   {
     "name": "Subaru BRZ",
     "brand": "Subaru",
-    "engine": "Flat-6",
+    "engine": "Flat-4",
     "price": 30495,
     "country": "Japan",
     "year": 2022,
@@ -965,7 +965,7 @@
   {
     "name": "Honda Integra Type R",
     "brand": "Honda",
-    "engine": "V6",
+    "engine": "I4",
     "price": 40000,
     "country": "Japan",
     "year": 2001,
@@ -977,7 +977,7 @@
   {
     "name": "Nissan 240SX",
     "brand": "Nissan",
-    "engine": "V6",
+    "engine": "I4",
     "price": 10000,
     "country": "Japan",
     "year": 1994,
@@ -1001,7 +1001,7 @@
   {
     "name": "Toyota Celica GT-Four",
     "brand": "Toyota",
-    "engine": "V6",
+    "engine": "I4",
     "price": 20000,
     "country": "Japan",
     "year": 1999,
@@ -1013,7 +1013,7 @@
   {
     "name": "Honda Beat",
     "brand": "Honda",
-    "engine": "V6",
+    "engine": "I3",
     "price": 8000,
     "country": "Japan",
     "year": 1991,
@@ -1025,7 +1025,7 @@
   {
     "name": "Suzuki Cappuccino",
     "brand": "Suzuki",
-    "engine": "V6",
+    "engine": "I3",
     "price": 7000,
     "country": "Japan",
     "year": 1991,
@@ -1290,7 +1290,7 @@
   {
     "name": "BMW M3 CSL",
     "brand": "BMW",
-    "engine": "V6",
+    "engine": "I6",
     "price": 80000,
     "country": "Germany",
     "year": 2003,
@@ -1302,7 +1302,7 @@
   {
     "name": "BMW M4 CSL",
     "brand": "BMW",
-    "engine": "V6",
+    "engine": "I6",
     "price": 140000,
     "country": "Germany",
     "year": 2022,
@@ -1326,7 +1326,7 @@
   {
     "name": "Alfa Romeo 4C",
     "brand": "Alfa Romeo",
-    "engine": "V6",
+    "engine": "I4",
     "price": 55000,
     "country": "Italy",
     "year": 2013,
@@ -1516,18 +1516,6 @@
     "country": "USA",
     "year": 2005,
     "hp": 750,
-    "modes": [
-      "normal"
-    ]
-  },
-  {
-    "name": "Shelby SuperCars Ultimate Aero",
-    "brand": "SSC",
-    "engine": "V8",
-    "price": 654400,
-    "country": "USA",
-    "year": 2006,
-    "hp": 1183,
     "modes": [
       "normal"
     ]
@@ -1918,6 +1906,1494 @@
     "hp": 1020,
     "modes": [
       "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 812 Competizione",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 560000,
+    "country": "Italy",
+    "year": 2021,
+    "hp": 830,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 296 GTS",
+    "brand": "Ferrari",
+    "engine": "V6",
+    "price": 340000,
+    "country": "Italy",
+    "year": 2022,
+    "hp": 830,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Huracan STO",
+    "brand": "Lamborghini",
+    "engine": "V10",
+    "price": 328000,
+    "country": "Italy",
+    "year": 2020,
+    "hp": 640,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Huracan Tecnica",
+    "brand": "Lamborghini",
+    "engine": "V10",
+    "price": 242000,
+    "country": "Italy",
+    "year": 2022,
+    "hp": 640,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "McLaren 750S",
+    "brand": "McLaren",
+    "engine": "V8",
+    "price": 317000,
+    "country": "UK",
+    "year": 2023,
+    "hp": 750,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 911 Dakar",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 223450,
+    "country": "Germany",
+    "year": 2022,
+    "hp": 480,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin Vanquish",
+    "brand": "Aston Martin",
+    "engine": "V12",
+    "price": 390000,
+    "country": "UK",
+    "year": 2024,
+    "hp": 824,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bugatti Tourbillon",
+    "brand": "Bugatti",
+    "engine": "V16",
+    "price": 4500000,
+    "country": "France",
+    "year": 2024,
+    "hp": 1800,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Koenigsegg Agera R",
+    "brand": "Koenigsegg",
+    "engine": "V8",
+    "price": 1600000,
+    "country": "Sweden",
+    "year": 2011,
+    "hp": 1140,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Pagani Huayra Roadster",
+    "brand": "Pagani",
+    "engine": "V12",
+    "price": 3300000,
+    "country": "Italy",
+    "year": 2017,
+    "hp": 764,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mercedes-AMG GT 63 S",
+    "brand": "Mercedes-AMG",
+    "engine": "V8",
+    "price": 180000,
+    "country": "Germany",
+    "year": 2018,
+    "hp": 630,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche Panamera Turbo S",
+    "brand": "Porsche",
+    "engine": "V8",
+    "price": 200000,
+    "country": "Germany",
+    "year": 2020,
+    "hp": 630,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bentley Continental GT3-R",
+    "brand": "Bentley",
+    "engine": "V8",
+    "price": 335000,
+    "country": "UK",
+    "year": 2014,
+    "hp": 572,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rolls-Royce Spectre",
+    "brand": "Rolls-Royce",
+    "engine": "Electric",
+    "price": 420000,
+    "country": "UK",
+    "year": 2023,
+    "hp": 577,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Dodge Challenger SRT Demon",
+    "brand": "Dodge",
+    "engine": "V8",
+    "price": 85000,
+    "country": "USA",
+    "year": 2018,
+    "hp": 840,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chevrolet Camaro ZL1 1LE",
+    "brand": "Chevrolet",
+    "engine": "V8",
+    "price": 75000,
+    "country": "USA",
+    "year": 2017,
+    "hp": 650,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ford GT Heritage Edition",
+    "brand": "Ford",
+    "engine": "V6",
+    "price": 750000,
+    "country": "USA",
+    "year": 2019,
+    "hp": 647,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Acura NSX Type S",
+    "brand": "Acura",
+    "engine": "V6",
+    "price": 171495,
+    "country": "USA",
+    "year": 2022,
+    "hp": 600,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lotus Emira V6",
+    "brand": "Lotus",
+    "engine": "V6",
+    "price": 95000,
+    "country": "UK",
+    "year": 2022,
+    "hp": 400,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Alpine A110 S",
+    "brand": "Alpine",
+    "engine": "I4",
+    "price": 75000,
+    "country": "France",
+    "year": 2019,
+    "hp": 292,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Nissan 350Z",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 27000,
+    "country": "Japan",
+    "year": 2002,
+    "hp": 287,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota GR Corolla",
+    "brand": "Toyota",
+    "engine": "I3",
+    "price": 36995,
+    "country": "Japan",
+    "year": 2022,
+    "hp": 300,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Subaru WRX",
+    "brand": "Subaru",
+    "engine": "Flat-4",
+    "price": 30605,
+    "country": "Japan",
+    "year": 2022,
+    "hp": 271,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Civic EK9 Type R",
+    "brand": "Honda",
+    "engine": "I4",
+    "price": 25000,
+    "country": "Japan",
+    "year": 1997,
+    "hp": 185,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mazda 3 MPS",
+    "brand": "Mazda",
+    "engine": "I4",
+    "price": 22000,
+    "country": "Japan",
+    "year": 2006,
+    "hp": 256,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota Chaser JZX100",
+    "brand": "Toyota",
+    "engine": "I6",
+    "price": 18000,
+    "country": "Japan",
+    "year": 1996,
+    "hp": 280,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Stagea RS260",
+    "brand": "Nissan",
+    "engine": "I6",
+    "price": 15000,
+    "country": "Japan",
+    "year": 1996,
+    "hp": 260,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota Aristo V300",
+    "brand": "Toyota",
+    "engine": "I6",
+    "price": 20000,
+    "country": "Japan",
+    "year": 1997,
+    "hp": 280,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Prelude Type S",
+    "brand": "Honda",
+    "engine": "I4",
+    "price": 12000,
+    "country": "Japan",
+    "year": 1996,
+    "hp": 200,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mitsubishi GTO Twin Turbo",
+    "brand": "Mitsubishi",
+    "engine": "V6",
+    "price": 18000,
+    "country": "Japan",
+    "year": 1990,
+    "hp": 280,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Matech GT Ford GT",
+    "brand": "Matech",
+    "engine": "V8",
+    "price": 500000,
+    "country": "France",
+    "year": 2008,
+    "hp": 650,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Mosler MT900S",
+    "brand": "Mosler",
+    "engine": "V8",
+    "price": 175000,
+    "country": "USA",
+    "year": 2000,
+    "hp": 435,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Pantera GT5-S",
+    "brand": "De Tomaso",
+    "engine": "V8",
+    "price": 120000,
+    "country": "Italy",
+    "year": 1985,
+    "hp": 350,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Sbarro Autobau",
+    "brand": "Sbarro",
+    "engine": "V8",
+    "price": 450000,
+    "country": "Switzerland",
+    "year": 2002,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Consulier Industries GTP",
+    "brand": "Consulier",
+    "engine": "I4",
+    "price": 50000,
+    "country": "USA",
+    "year": 1988,
+    "hp": 175,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Cizeta-Moroder V16T",
+    "brand": "Cizeta",
+    "engine": "V16",
+    "price": 300000,
+    "country": "Italy",
+    "year": 1991,
+    "hp": 540,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Isdera Commendatore 112i",
+    "brand": "Isdera",
+    "engine": "V12",
+    "price": 1000000,
+    "country": "Germany",
+    "year": 1993,
+    "hp": 394,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "HTT Pl\u00e9thore LC-750",
+    "brand": "HTT",
+    "engine": "V8",
+    "price": 950000,
+    "country": "Canada",
+    "year": 2009,
+    "hp": 750,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Genty Akylone",
+    "brand": "Genty",
+    "engine": "V8",
+    "price": 1100000,
+    "country": "France",
+    "year": 2013,
+    "hp": 1000,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Marrusia B2",
+    "brand": "Marussia",
+    "engine": "V6",
+    "price": 150000,
+    "country": "UK",
+    "year": 2010,
+    "hp": 420,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Arash AF10",
+    "brand": "Arash",
+    "engine": "V8",
+    "price": 1100000,
+    "country": "UK",
+    "year": 2009,
+    "hp": 2080,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Joss JT1",
+    "brand": "Joss",
+    "engine": "V8",
+    "price": 500000,
+    "country": "Australia",
+    "year": 2010,
+    "hp": 444,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Falcon F7",
+    "brand": "Falcon",
+    "engine": "V8",
+    "price": 195000,
+    "country": "USA",
+    "year": 2012,
+    "hp": 620,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Leblanc Mirabeau",
+    "brand": "Leblanc",
+    "engine": "V8",
+    "price": 645000,
+    "country": "Switzerland",
+    "year": 1999,
+    "hp": 700,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Caparo T1",
+    "brand": "Caparo",
+    "engine": "V8",
+    "price": 289000,
+    "country": "UK",
+    "year": 2006,
+    "hp": 575,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Lotec Sirius",
+    "brand": "Lotec",
+    "engine": "V8",
+    "price": 3400000,
+    "country": "Germany",
+    "year": 1999,
+    "hp": 1350,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Dauer 962 Le Mans",
+    "brand": "Dauer",
+    "engine": "Flat-6",
+    "price": 1500000,
+    "country": "Germany",
+    "year": 1994,
+    "hp": 730,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Sbarro Espera Sbarro",
+    "brand": "Sbarro",
+    "engine": "V8",
+    "price": 600000,
+    "country": "Switzerland",
+    "year": 2010,
+    "hp": 700,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Monteverdi Hai 450SS",
+    "brand": "Monteverdi",
+    "engine": "V8",
+    "price": 200000,
+    "country": "Switzerland",
+    "year": 1970,
+    "hp": 450,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Proto C2R",
+    "brand": "Proto",
+    "engine": "V8",
+    "price": 180000,
+    "country": "South Korea",
+    "year": 2007,
+    "hp": 455,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Hiriko Fold",
+    "brand": "Hiriko",
+    "engine": "Electric",
+    "price": 12500,
+    "country": "Spain",
+    "year": 2012,
+    "hp": 40,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Savage Rivale GTR",
+    "brand": "Savage Rivale",
+    "engine": "V8",
+    "price": 300000,
+    "country": "Netherlands",
+    "year": 2010,
+    "hp": 649,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Tramontana R",
+    "brand": "Tramontana",
+    "engine": "V12",
+    "price": 600000,
+    "country": "Spain",
+    "year": 2007,
+    "hp": 720,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Hulme CanAm",
+    "brand": "Hulme",
+    "engine": "V8",
+    "price": 250000,
+    "country": "New Zealand",
+    "year": 2006,
+    "hp": 600,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Covini C6W",
+    "brand": "Covini",
+    "engine": "V8",
+    "price": 400000,
+    "country": "Italy",
+    "year": 2004,
+    "hp": 440,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Praga R1R",
+    "brand": "Praga",
+    "engine": "I4",
+    "price": 220000,
+    "country": "Czech Republic",
+    "year": 2014,
+    "hp": 270,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Tauro Sport Auto V8 Spider",
+    "brand": "Tauro Sport",
+    "engine": "V8",
+    "price": 500000,
+    "country": "Spain",
+    "year": 2013,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Spania GTA Spano",
+    "brand": "Spania GTA",
+    "engine": "V10",
+    "price": 1600000,
+    "country": "Spain",
+    "year": 2009,
+    "hp": 925,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Lada Revolution 3",
+    "brand": "Lada",
+    "engine": "I4",
+    "price": 300000,
+    "country": "Russia",
+    "year": 2012,
+    "hp": 400,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Grinnall Scorpion III",
+    "brand": "Grinnall",
+    "engine": "V8",
+    "price": 35000,
+    "country": "UK",
+    "year": 1996,
+    "hp": 270,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Kode57 Supercar",
+    "brand": "Kode",
+    "engine": "V8",
+    "price": 1200000,
+    "country": "UK",
+    "year": 2010,
+    "hp": 700,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Lister Storm",
+    "brand": "Lister",
+    "engine": "V12",
+    "price": 250000,
+    "country": "UK",
+    "year": 1993,
+    "hp": 594,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Tushek Renovatio T500",
+    "brand": "Tushek",
+    "engine": "V8",
+    "price": 450000,
+    "country": "Slovenia",
+    "year": 2011,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Falcon Motorsports F7",
+    "brand": "Falcon",
+    "engine": "V8",
+    "price": 195000,
+    "country": "USA",
+    "year": 2013,
+    "hp": 620,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "SC-5A Supercar",
+    "brand": "SC",
+    "engine": "V8",
+    "price": 165000,
+    "country": "USA",
+    "year": 2005,
+    "hp": 465,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Megola Sport",
+    "brand": "Megola",
+    "engine": "Rotary",
+    "price": 250000,
+    "country": "Germany",
+    "year": 1921,
+    "hp": 14,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Orca C113",
+    "brand": "Orca",
+    "engine": "V8",
+    "price": 380000,
+    "country": "Spain",
+    "year": 2016,
+    "hp": 580,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "America Berlinetta",
+    "brand": "Stile Bertone",
+    "engine": "V8",
+    "price": 850000,
+    "country": "Italy",
+    "year": 2013,
+    "hp": 700,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Berlinetta Lusso T",
+    "brand": "Touring Superleggera",
+    "engine": "V8",
+    "price": 550000,
+    "country": "Italy",
+    "year": 2013,
+    "hp": 460,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Icona Vulcano",
+    "brand": "Icona",
+    "engine": "V8",
+    "price": 2500000,
+    "country": "Italy",
+    "year": 2013,
+    "hp": 900,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Icona Vulcano Titanium",
+    "brand": "Icona",
+    "engine": "V8",
+    "price": 3000000,
+    "country": "Italy",
+    "year": 2016,
+    "hp": 950,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Zacaria ZGT600",
+    "brand": "Zacaria",
+    "engine": "V8",
+    "price": 180000,
+    "country": "Brazil",
+    "year": 2010,
+    "hp": 600,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Galpin Motors GTR1",
+    "brand": "Galpin",
+    "engine": "V8",
+    "price": 1000000,
+    "country": "USA",
+    "year": 2014,
+    "hp": 800,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Velozzi Super Car",
+    "brand": "Velozzi",
+    "engine": "V8",
+    "price": 200000,
+    "country": "USA",
+    "year": 2009,
+    "hp": 550,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Revenge Verde",
+    "brand": "Revenge",
+    "engine": "V8",
+    "price": 350000,
+    "country": "USA",
+    "year": 2009,
+    "hp": 800,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ruf CTR3",
+    "brand": "Ruf",
+    "engine": "Flat-6",
+    "price": 700000,
+    "country": "Germany",
+    "year": 2007,
+    "hp": 700,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ruf RGT-8",
+    "brand": "Ruf",
+    "engine": "V8",
+    "price": 450000,
+    "country": "Germany",
+    "year": 2011,
+    "hp": 550,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ruf Yellowbird",
+    "brand": "Ruf",
+    "engine": "Flat-6",
+    "price": 250000,
+    "country": "Germany",
+    "year": 1987,
+    "hp": 469,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ruf CTR Anniversary",
+    "brand": "Ruf",
+    "engine": "Flat-6",
+    "price": 700000,
+    "country": "Germany",
+    "year": 2017,
+    "hp": 710,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Weismann GT MF5",
+    "brand": "Wiesmann",
+    "engine": "V10",
+    "price": 259000,
+    "country": "Germany",
+    "year": 2009,
+    "hp": 507,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Wiesmann Roadster MF3",
+    "brand": "Wiesmann",
+    "engine": "I6",
+    "price": 75000,
+    "country": "Germany",
+    "year": 2003,
+    "hp": 321,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Gumpert Apollo",
+    "brand": "Gumpert",
+    "engine": "V8",
+    "price": 450000,
+    "country": "Germany",
+    "year": 2005,
+    "hp": 650,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Gumpert Tornante",
+    "brand": "Gumpert",
+    "engine": "V8",
+    "price": 800000,
+    "country": "Germany",
+    "year": 2011,
+    "hp": 670,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Apollo IE",
+    "brand": "Apollo",
+    "engine": "V12",
+    "price": 2700000,
+    "country": "Germany",
+    "year": 2017,
+    "hp": 780,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Melkus RS2000",
+    "brand": "Melkus",
+    "engine": "I4",
+    "price": 130000,
+    "country": "Germany",
+    "year": 2009,
+    "hp": 300,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Artega GT",
+    "brand": "Artega",
+    "engine": "V6",
+    "price": 79000,
+    "country": "Germany",
+    "year": 2007,
+    "hp": 300,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Keating Supercars TKR",
+    "brand": "Keating",
+    "engine": "V8",
+    "price": 1000000,
+    "country": "UK",
+    "year": 2008,
+    "hp": 2000,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ariel Atom V8",
+    "brand": "Ariel",
+    "engine": "V8",
+    "price": 150000,
+    "country": "UK",
+    "year": 2011,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ariel Nomad",
+    "brand": "Ariel",
+    "engine": "I4",
+    "price": 65000,
+    "country": "UK",
+    "year": 2015,
+    "hp": 235,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "BAC Mono",
+    "brand": "BAC",
+    "engine": "I4",
+    "price": 165000,
+    "country": "UK",
+    "year": 2011,
+    "hp": 305,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Bristol Fighter T",
+    "brand": "Bristol",
+    "engine": "V10",
+    "price": 350000,
+    "country": "UK",
+    "year": 2004,
+    "hp": 1012,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "TVR Sagaris",
+    "brand": "TVR",
+    "engine": "I6",
+    "price": 60000,
+    "country": "UK",
+    "year": 2004,
+    "hp": 406,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "TVR Tuscan Speed 6",
+    "brand": "TVR",
+    "engine": "I6",
+    "price": 48000,
+    "country": "UK",
+    "year": 1999,
+    "hp": 360,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Marcos Mantis",
+    "brand": "Marcos",
+    "engine": "V8",
+    "price": 80000,
+    "country": "UK",
+    "year": 1997,
+    "hp": 400,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ascari A10",
+    "brand": "Ascari",
+    "engine": "V8",
+    "price": 650000,
+    "country": "UK",
+    "year": 2006,
+    "hp": 625,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ascari KZ1",
+    "brand": "Ascari",
+    "engine": "V8",
+    "price": 500000,
+    "country": "UK",
+    "year": 2003,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Radical RXC Turbo",
+    "brand": "Radical",
+    "engine": "V6",
+    "price": 160000,
+    "country": "UK",
+    "year": 2014,
+    "hp": 450,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ultima GTR",
+    "brand": "Ultima",
+    "engine": "V8",
+    "price": 95000,
+    "country": "UK",
+    "year": 1992,
+    "hp": 640,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Palmer Jaguar JP LM",
+    "brand": "Palmer Jaguar",
+    "engine": "V8",
+    "price": 180000,
+    "country": "UK",
+    "year": 1997,
+    "hp": 800,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Strathcarron SC5-A",
+    "brand": "Strathcarron",
+    "engine": "V8",
+    "price": 165000,
+    "country": "UK",
+    "year": 2005,
+    "hp": 465,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "PGO Cevennes",
+    "brand": "PGO",
+    "engine": "V6",
+    "price": 90000,
+    "country": "France",
+    "year": 2003,
+    "hp": 270,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ligier JS2",
+    "brand": "Ligier",
+    "engine": "V6",
+    "price": 200000,
+    "country": "France",
+    "year": 1972,
+    "hp": 270,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Venturi 400 GT",
+    "brand": "Venturi",
+    "engine": "V6",
+    "price": 250000,
+    "country": "France",
+    "year": 1992,
+    "hp": 408,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Microcar M.Go",
+    "brand": "Microcar",
+    "engine": "I3",
+    "price": 12000,
+    "country": "France",
+    "year": 2009,
+    "hp": 8,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Vencer Sarthe",
+    "brand": "Vencer",
+    "engine": "V8",
+    "price": 650000,
+    "country": "Netherlands",
+    "year": 2014,
+    "hp": 610,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Spyker C8 Aileron",
+    "brand": "Spyker",
+    "engine": "V8",
+    "price": 350000,
+    "country": "Netherlands",
+    "year": 2009,
+    "hp": 400,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Spyker C8 Laviolette",
+    "brand": "Spyker",
+    "engine": "V8",
+    "price": 280000,
+    "country": "Netherlands",
+    "year": 2001,
+    "hp": 400,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Donkervoort D8 GTO",
+    "brand": "Donkervoort",
+    "engine": "I5",
+    "price": 165000,
+    "country": "Netherlands",
+    "year": 2013,
+    "hp": 400,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Louwman Memories LM",
+    "brand": "Louwman",
+    "engine": "V8",
+    "price": 500000,
+    "country": "Netherlands",
+    "year": 2012,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Fornasari RR600",
+    "brand": "Fornasari",
+    "engine": "V8",
+    "price": 400000,
+    "country": "Italy",
+    "year": 2009,
+    "hp": 600,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Stola S81 Diamante",
+    "brand": "Stola",
+    "engine": "V12",
+    "price": 700000,
+    "country": "Italy",
+    "year": 2006,
+    "hp": 630,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Testa d'Oro Colani",
+    "brand": "Colani",
+    "engine": "V8",
+    "price": 800000,
+    "country": "Germany",
+    "year": 2002,
+    "hp": 550,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Edag Light Car Connected",
+    "brand": "Edag",
+    "engine": "Electric",
+    "price": 200000,
+    "country": "Germany",
+    "year": 2015,
+    "hp": 300,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Ox99-11",
+    "brand": "Yamaha",
+    "engine": "V12",
+    "price": 800000,
+    "country": "Japan",
+    "year": 1992,
+    "hp": 500,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Dome Zero",
+    "brand": "Dome",
+    "engine": "V8",
+    "price": 350000,
+    "country": "Japan",
+    "year": 1978,
+    "hp": 325,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Mitsuoka Orochi",
+    "brand": "Mitsuoka",
+    "engine": "V6",
+    "price": 110000,
+    "country": "Japan",
+    "year": 2006,
+    "hp": 233,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Autobacs Garaiya",
+    "brand": "Autobacs",
+    "engine": "I4",
+    "price": 120000,
+    "country": "Japan",
+    "year": 2001,
+    "hp": 280,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Tommy Kaira ZZII",
+    "brand": "Tommy Kaira",
+    "engine": "I4",
+    "price": 80000,
+    "country": "Japan",
+    "year": 1997,
+    "hp": 210,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Jiotto Caspita",
+    "brand": "Dome",
+    "engine": "V12",
+    "price": 1000000,
+    "country": "Japan",
+    "year": 1989,
+    "hp": 650,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Raj Sharan",
+    "brand": "TATA",
+    "engine": "V8",
+    "price": 150000,
+    "country": "India",
+    "year": 2013,
+    "hp": 450,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Inferno Exotic Car",
+    "brand": "Inferno",
+    "engine": "V8",
+    "price": 1000000,
+    "country": "USA",
+    "year": 2011,
+    "hp": 638,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Rossion Q1",
+    "brand": "Rossion",
+    "engine": "V6",
+    "price": 95000,
+    "country": "USA",
+    "year": 2008,
+    "hp": 395,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Panoz Esperante GTLM",
+    "brand": "Panoz",
+    "engine": "V8",
+    "price": 130000,
+    "country": "USA",
+    "year": 1999,
+    "hp": 430,
+    "modes": [
+      "unknown"
+    ]
+  },
+  {
+    "name": "Coda Electric",
+    "brand": "Coda",
+    "engine": "Electric",
+    "price": 37250,
+    "country": "USA",
+    "year": 2012,
+    "hp": 134,
+    "modes": [
+      "unknown"
     ]
   }
 ]
