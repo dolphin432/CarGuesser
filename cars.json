@@ -2353,7 +2353,7 @@
     ]
   },
   {
-    "name": "HTT Pl\u00e9thore LC-750",
+    "name": "HTT Pléthore LC-750",
     "brand": "HTT",
     "engine": "V8",
     "price": 950000,
@@ -3394,6 +3394,426 @@
     "hp": 134,
     "modes": [
       "unknown"
+    ]
+  },
+  {
+    "name": "Lamborghini Countach LP5000 S",
+    "brand": "Lamborghini",
+    "engine": "V12",
+    "price": 300000,
+    "country": "Italy",
+    "year": 1982,
+    "hp": 375,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lamborghini Countach LPI 25th Anniversary",
+    "brand": "Lamborghini",
+    "engine": "V12",
+    "price": 250000,
+    "country": "Italy",
+    "year": 1988,
+    "hp": 455,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari Testarossa",
+    "brand": "Ferrari",
+    "engine": "Flat-6",
+    "price": 180000,
+    "country": "Italy",
+    "year": 1984,
+    "hp": 390,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 348 GTB",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 85000,
+    "country": "Italy",
+    "year": 1993,
+    "hp": 320,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 355 F1",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 130000,
+    "country": "Italy",
+    "year": 1997,
+    "hp": 380,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 360 Modena",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 110000,
+    "country": "Italy",
+    "year": 1999,
+    "hp": 400,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 430 Scuderia",
+    "brand": "Ferrari",
+    "engine": "V8",
+    "price": 255000,
+    "country": "Italy",
+    "year": 2007,
+    "hp": 510,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ferrari 599 GTB Fiorano",
+    "brand": "Ferrari",
+    "engine": "V12",
+    "price": 310000,
+    "country": "Italy",
+    "year": 2006,
+    "hp": 620,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Alfa Romeo 33 Stradale",
+    "brand": "Alfa Romeo",
+    "engine": "V6",
+    "price": 1500000,
+    "country": "Italy",
+    "year": 2023,
+    "hp": 620,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "De Tomaso Pantera GT5",
+    "brand": "De Tomaso",
+    "engine": "V8",
+    "price": 95000,
+    "country": "Italy",
+    "year": 1984,
+    "hp": 350,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 911 Carrera RS 2.7",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 1200000,
+    "country": "Germany",
+    "year": 1972,
+    "hp": 210,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BMW M1",
+    "brand": "BMW",
+    "engine": "I6",
+    "price": 350000,
+    "country": "Germany",
+    "year": 1978,
+    "hp": 277,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz 300 SL Gullwing",
+    "brand": "Mercedes-Benz",
+    "engine": "I6",
+    "price": 1400000,
+    "country": "Germany",
+    "year": 1954,
+    "hp": 215,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Porsche 911 Sport Classic",
+    "brand": "Porsche",
+    "engine": "Flat-6",
+    "price": 274000,
+    "country": "Germany",
+    "year": 2022,
+    "hp": 473,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "BMW M3 GTR",
+    "brand": "BMW",
+    "engine": "V8",
+    "price": 250000,
+    "country": "Germany",
+    "year": 2001,
+    "hp": 444,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Jaguar E-Type Series 1",
+    "brand": "Jaguar",
+    "engine": "I6",
+    "price": 350000,
+    "country": "UK",
+    "year": 1961,
+    "hp": 265,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Jaguar F-Type R",
+    "brand": "Jaguar",
+    "engine": "V8",
+    "price": 103000,
+    "country": "UK",
+    "year": 2020,
+    "hp": 575,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin DB5",
+    "brand": "Aston Martin",
+    "engine": "I6",
+    "price": 1400000,
+    "country": "UK",
+    "year": 1963,
+    "hp": 282,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Aston Martin DB9 GT",
+    "brand": "Aston Martin",
+    "engine": "V12",
+    "price": 198000,
+    "country": "UK",
+    "year": 2015,
+    "hp": 547,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Dodge Viper GTS",
+    "brand": "Dodge",
+    "engine": "V10",
+    "price": 85000,
+    "country": "USA",
+    "year": 1996,
+    "hp": 450,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chevrolet Corvette C8 Stingray",
+    "brand": "Chevrolet",
+    "engine": "V8",
+    "price": 62195,
+    "country": "USA",
+    "year": 2020,
+    "hp": 495,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ford Mustang GT500 Shelby Eleanor",
+    "brand": "Ford",
+    "engine": "V8",
+    "price": 130000,
+    "country": "USA",
+    "year": 1967,
+    "hp": 390,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Shelby Cobra 427",
+    "brand": "Shelby",
+    "engine": "V8",
+    "price": 1300000,
+    "country": "USA",
+    "year": 1965,
+    "hp": 485,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Pontiac GTO The Judge",
+    "brand": "Pontiac",
+    "engine": "V8",
+    "price": 130000,
+    "country": "USA",
+    "year": 1969,
+    "hp": 366,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Dodge Challenger Hellcat Redeye",
+    "brand": "Dodge",
+    "engine": "V8",
+    "price": 72000,
+    "country": "USA",
+    "year": 2019,
+    "hp": 797,
+    "modes": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Toyota Supra GR A90 TRD",
+    "brand": "Toyota",
+    "engine": "I6",
+    "price": 75000,
+    "country": "Japan",
+    "year": 2022,
+    "hp": 422,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan GT-R R35 Track Edition",
+    "brand": "Nissan",
+    "engine": "V6",
+    "price": 130000,
+    "country": "Japan",
+    "year": 2023,
+    "hp": 600,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda NSX Type R NA1",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 190000,
+    "country": "Japan",
+    "year": 1992,
+    "hp": 274,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mazda RX-7 Spirit R",
+    "brand": "Mazda",
+    "engine": "Rotary",
+    "price": 65000,
+    "country": "Japan",
+    "year": 2002,
+    "hp": 280,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Toyota 2000GT",
+    "brand": "Toyota",
+    "engine": "I6",
+    "price": 900000,
+    "country": "Japan",
+    "year": 1967,
+    "hp": 150,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda Legend NSX-R GT",
+    "brand": "Honda",
+    "engine": "V6",
+    "price": 560000,
+    "country": "Japan",
+    "year": 2005,
+    "hp": 600,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Subaru Impreza 22B STI",
+    "brand": "Subaru",
+    "engine": "Flat-4",
+    "price": 180000,
+    "country": "Japan",
+    "year": 1998,
+    "hp": 280,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Mitsubishi Lancer Evolution IX MR",
+    "brand": "Mitsubishi",
+    "engine": "I4",
+    "price": 45000,
+    "country": "Japan",
+    "year": 2006,
+    "hp": 286,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Nissan Fairlady Z432",
+    "brand": "Nissan",
+    "engine": "I6",
+    "price": 250000,
+    "country": "Japan",
+    "year": 1969,
+    "hp": 160,
+    "modes": [
+      "jdm"
+    ]
+  },
+  {
+    "name": "Honda City Turbo II",
+    "brand": "Honda",
+    "engine": "I4",
+    "price": 15000,
+    "country": "Japan",
+    "year": 1983,
+    "hp": 110,
+    "modes": [
+      "jdm"
     ]
   }
 ]
