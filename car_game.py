@@ -5,6 +5,8 @@ import tkinter as tk
 from tkinter import font as tkfont
 import threading
 import difflib
+import datetime
+import hashlib
 
 # Colors
 BG      = "#0d0d0d"
@@ -18,6 +20,7 @@ GRAY    = "#404040"
 TEXT    = "#f0f0f0"
 SUBTEXT = "#888888"
 BORDER  = "#2a2a2a"
+GOLD    = "#f59e0b"
 
 ENGINE_ORDER = ["I3", "I4", "Flat-4", "I5", "I6", "V6", "Flat-6", "V8", "V10", "V12", "V16", "W12", "W16", "Rotary", "Electric"]
 
@@ -37,6 +40,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  Expert Mode",
         "classic_mode":   "⭐  Classic Mode",
         "classic_lbl":    "⭐ Classic Mode",
+        "daily_mode":     "📅  Daily Mode",
+        "daily_lbl":      "📅 Daily Mode",
         "stats_btn":      "📊  Statistics",
         "settings_btn":   "⚙️  Settings",
         "guesses_left":   "Guess {}/{}",
@@ -61,6 +66,7 @@ LANGUAGES = {
         "stats_normal":   "Normal Mode",
         "stats_classic":  "Classic Mode",
         "stats_expert":   "Expert Mode",
+        "stats_daily":    "Daily Mode",
         "total_games":    "Total Games",
         "win_rate":       "Win Rate",
         "back":           "← Back",
@@ -80,6 +86,10 @@ LANGUAGES = {
         "unknown_mode":   "🔍  Unknown Cars Mode",
         "unknown_lbl":    "🔍 Unknown Cars Mode",
         "stats_title":    "📊 STATISTICS",
+        "daily_already_played": "✅ Already played today!",
+        "daily_come_back":      "Come back tomorrow for a new car.",
+        "daily_date":           "📅 Daily Car — {}",
+        "daily_streak":         "🔥 Streak: {} days",
     },
     "tr": {
         "title_sub":      "Arabayı Bul!",
@@ -88,6 +98,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  Uzman Mod",
         "classic_mode":   "⭐  Klasik Mod",
         "classic_lbl":    "⭐ Klasik Mod",
+        "daily_mode":     "📅  Günlük Mod",
+        "daily_lbl":      "📅 Günlük Mod",
         "jdm_mode":       "🇯🇵  JDM Modu",
         "jdm_lbl":        "🇯🇵 JDM Modu",
         "unknown_mode":   "🔍  Az Bilinenler Modu",
@@ -117,6 +129,7 @@ LANGUAGES = {
         "stats_normal":   "Normal Mod",
         "stats_classic":  "Klasik Mod",
         "stats_expert":   "Uzman Mod",
+        "stats_daily":    "Günlük Mod",
         "total_games":    "Toplam Oyun",
         "win_rate":       "Kazanma Oranı",
         "back":           "← Geri",
@@ -131,6 +144,10 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normal Mod",
         "hint_lbl":       "💡 İpucu Modu",
         "expert_lbl":     "🧠 Uzman Mod",
+        "daily_already_played": "✅ Bugün zaten oynadın!",
+        "daily_come_back":      "Yeni araba için yarın gel.",
+        "daily_date":           "📅 Günlük Araba — {}",
+        "daily_streak":         "🔥 Seri: {} gün",
     },
     "de": {
         "title_sub":      "Rate das Auto!",
@@ -139,6 +156,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  Experten-Modus",
         "classic_mode":   "⭐  Klassischer Modus",
         "classic_lbl":    "⭐ Klassischer Modus",
+        "daily_mode":     "📅  Täglicher Modus",
+        "daily_lbl":      "📅 Täglicher Modus",
         "jdm_mode":       "🇯🇵  JDM-Modus",
         "jdm_lbl":        "🇯🇵 JDM-Modus",
         "unknown_mode":   "🔍  Unbekannte Autos",
@@ -168,6 +187,7 @@ LANGUAGES = {
         "stats_normal":   "Normaler Modus",
         "stats_classic":  "Klassischer Modus",
         "stats_expert":   "Experten-Modus",
+        "stats_daily":    "Täglicher Modus",
         "total_games":    "Spiele gesamt",
         "win_rate":       "Gewinnrate",
         "back":           "← Zurück",
@@ -182,6 +202,10 @@ LANGUAGES = {
         "normal_lbl":     "▶ Normaler Modus",
         "hint_lbl":       "💡 Hinweis-Modus",
         "expert_lbl":     "🧠 Experten-Modus",
+        "daily_already_played": "✅ Heute bereits gespielt!",
+        "daily_come_back":      "Komm morgen für ein neues Auto.",
+        "daily_date":           "📅 Tägliches Auto — {}",
+        "daily_streak":         "🔥 Serie: {} Tage",
     },
     "pl": {
         "title_sub":      "Zgadnij auto!",
@@ -190,6 +214,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  Tryb eksperta",
         "classic_mode":   "⭐  Tryb klasyczny",
         "classic_lbl":    "⭐ Tryb klasyczny",
+        "daily_mode":     "📅  Tryb dzienny",
+        "daily_lbl":      "📅 Tryb dzienny",
         "jdm_mode":       "🇯🇵  Tryb JDM",
         "jdm_lbl":        "🇯🇵 Tryb JDM",
         "unknown_mode":   "🔍  Nieznane Auta",
@@ -219,6 +245,7 @@ LANGUAGES = {
         "stats_normal":   "Tryb normalny",
         "stats_classic":  "Tryb klasyczny",
         "stats_expert":   "Tryb eksperta",
+        "stats_daily":    "Tryb dzienny",
         "total_games":    "Łączna liczba gier",
         "win_rate":       "Wskaźnik wygranych",
         "back":           "← Wróć",
@@ -233,6 +260,10 @@ LANGUAGES = {
         "normal_lbl":     "▶ Tryb normalny",
         "hint_lbl":       "💡 Tryb podpowiedzi",
         "expert_lbl":     "🧠 Tryb eksperta",
+        "daily_already_played": "✅ Już dziś grałeś!",
+        "daily_come_back":      "Wróć jutro po nowe auto.",
+        "daily_date":           "📅 Dzienne Auto — {}",
+        "daily_streak":         "🔥 Seria: {} dni",
     },
     "zh": {
         "title_sub":      "猜猜这辆车！",
@@ -241,6 +272,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  专家模式",
         "classic_mode":   "⭐  经典模式",
         "classic_lbl":    "⭐ 经典模式",
+        "daily_mode":     "📅  每日模式",
+        "daily_lbl":      "📅 每日模式",
         "jdm_mode":       "🇯🇵  JDM模式",
         "jdm_lbl":        "🇯🇵 JDM模式",
         "unknown_mode":   "🔍  冷门汽车模式",
@@ -270,6 +303,7 @@ LANGUAGES = {
         "stats_normal":   "普通模式",
         "stats_classic":  "经典模式",
         "stats_expert":   "专家模式",
+        "stats_daily":    "每日模式",
         "total_games":    "总游戏数",
         "win_rate":       "胜率",
         "back":           "← 返回",
@@ -284,6 +318,10 @@ LANGUAGES = {
         "normal_lbl":     "▶ 普通模式",
         "hint_lbl":       "💡 提示模式",
         "expert_lbl":     "🧠 专家模式",
+        "daily_already_played": "✅ 今天已经玩过了！",
+        "daily_come_back":      "明天再来挑战新车。",
+        "daily_date":           "📅 每日汽车 — {}",
+        "daily_streak":         "🔥 连续: {} 天",
     },
     "fr": {
         "title_sub":      "Devinez la voiture!",
@@ -292,6 +330,8 @@ LANGUAGES = {
         "expert_mode":    "🧠  Mode Expert",
         "classic_mode":   "⭐  Mode Classique",
         "classic_lbl":    "⭐ Mode Classique",
+        "daily_mode":     "📅  Mode Quotidien",
+        "daily_lbl":      "📅 Mode Quotidien",
         "jdm_mode":       "🇯🇵  Mode JDM",
         "jdm_lbl":        "🇯🇵 Mode JDM",
         "unknown_mode":   "🔍  Voitures Inconnues",
@@ -321,6 +361,7 @@ LANGUAGES = {
         "stats_normal":   "Mode Normal",
         "stats_classic":  "Mode Classique",
         "stats_expert":   "Mode Expert",
+        "stats_daily":    "Mode Quotidien",
         "total_games":    "Total des parties",
         "win_rate":       "Taux de victoire",
         "back":           "← Retour",
@@ -335,8 +376,101 @@ LANGUAGES = {
         "normal_lbl":     "▶ Mode Normal",
         "hint_lbl":       "💡 Mode Indice",
         "expert_lbl":     "🧠 Mode Expert",
-    }
+        "daily_already_played": "✅ Déjà joué aujourd'hui!",
+        "daily_come_back":      "Revenez demain pour une nouvelle voiture.",
+        "daily_date":           "📅 Voiture du Jour — {}",
+        "daily_streak":         "🔥 Série: {} jours",
+    },
+    "it": {
+        "title_sub":      "Indovina l'auto!",
+        "normal_mode":    "▶  Modalità Normale",
+        "hint_mode":      "💡  Modalità Indizio",
+        "expert_mode":    "🧠  Modalità Esperto",
+        "classic_mode":   "⭐  Modalità Classica",
+        "classic_lbl":    "⭐ Modalità Classica",
+        "daily_mode":     "📅  Modalità Giornaliera",
+        "daily_lbl":      "📅 Modalità Giornaliera",
+        "jdm_mode":       "🇯🇵  Modalità JDM",
+        "jdm_lbl":        "🇯🇵 Modalità JDM",
+        "unknown_mode":   "🔍  Auto Sconosciute",
+        "unknown_lbl":    "🔍 Auto Sconosciute",
+        "stats_btn":      "📊  Statistiche",
+        "settings_btn":   "⚙️  Impostazioni",
+        "guesses_left":   "Tentativo {}/{}",
+        "correct":        "Corretto",
+        "close":          "Vicino (stesso continente / ±20% prezzo / motore adiacente)",
+        "wrong":          "Sbagliato",
+        "car_col":        "Auto",
+        "brand_col":      "Marca",
+        "engine_col":     "Motore",
+        "price_col":      "Prezzo",
+        "country_col":    "Paese",
+        "year_col":       "Anno",
+        "hp_col":         "CV",
+        "hint_btn":       "💡 Ottieni indizio (i)",
+        "no_hint":        "💡 Nessun altro indizio!",
+        "already_used":   "⚠ Hai già indovinato questa auto!",
+        "not_found":      "⚠ Auto non trovata! Scrivi il nome esatto.",
+        "congrats":       "🎉 Corretto in {} tentativi!",
+        "failed":         "💀 Hai perso! Risposta:",
+        "play_again":     "Gioca ancora",
+        "main_menu":      "Menu Principale",
+        "stats_title":    "📊 STATISTICHE",
+        "stats_normal":   "Modalità Normale",
+        "stats_classic":  "Modalità Classica",
+        "stats_expert":   "Modalità Esperto",
+        "stats_daily":    "Modalità Giornaliera",
+        "total_games":    "Partite totali",
+        "win_rate":       "Percentuale vittorie",
+        "back":           "← Indietro",
+        "settings_title": "⚙️ IMPOSTAZIONI",
+        "language_label": "Lingua",
+        "hint_engine":    "💡 Motore: {}",
+        "hint_country":   "💡 Paese: {}",
+        "hint_year":      "💡 Anno: {}",
+        "hint_brand":     "💡 Marca: {}",
+        "hint_price":     "💡 Fascia di prezzo: ${} - ${}",
+        "8_guesses":      "Hai 8 tentativi",
+        "normal_lbl":     "▶ Modalità Normale",
+        "hint_lbl":       "💡 Modalità Indizio",
+        "expert_lbl":     "🧠 Modalità Esperto",
+        "daily_already_played": "✅ Hai già giocato oggi!",
+        "daily_come_back":      "Torna domani per una nuova auto.",
+        "daily_date":           "📅 Auto del Giorno — {}",
+        "daily_streak":         "🔥 Striscia: {} giorni",
+    },
 }
+
+# ─── Daily mode helpers ───────────────────────────────────────────────────────
+
+def get_today_str():
+    return datetime.date.today().isoformat()   # "2025-06-06"
+
+def get_daily_car(cars):
+    """Her gün aynı arabayı döndürür (tarih seed'e dayalı)."""
+    today = get_today_str()
+    seed  = int(hashlib.md5(today.encode()).hexdigest(), 16)
+    daily_pool = [c for c in cars if "normal" in c.get("modes", ["normal"])]
+    return daily_pool[seed % len(daily_pool)]
+
+def load_daily_state():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(script_dir, "daily_state.json")
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            data = json.load(f)
+        # Sadece bugüne ait veri geçerli
+        if data.get("date") == get_today_str():
+            return data
+    return {"date": get_today_str(), "played": False, "won": False, "turns": 0,
+            "guesses": [], "streak": 0, "last_win_date": ""}
+
+def save_daily_state(state):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(script_dir, "daily_state.json"), "w") as f:
+        json.dump(state, f)
+
+# ─── Utility ──────────────────────────────────────────────────────────────────
 
 def fuzzy_match(query, cars, used, limit=6):
     query = query.strip().lower()
@@ -347,13 +481,10 @@ def fuzzy_match(query, cars, used, limit=6):
         if car["name"] in used:
             continue
         name = car["name"].lower()
-        # Direkt içeriyor mu
         if query in name:
             results.append((1.0, car))
             continue
-        # Fuzzy benzerlik
         ratio = difflib.SequenceMatcher(None, query, name).ratio()
-        # Her kelimeyi ayrı ayrı karşılaştır
         word_ratio = max(
             difflib.SequenceMatcher(None, query, word).ratio()
             for word in name.split()
@@ -383,9 +514,10 @@ def load_stats():
             return json.load(f)
     return {
         "total": 0, "wins": 0,
-        "normal": {"total": 0, "wins": 0},
+        "normal":  {"total": 0, "wins": 0},
         "classic": {"total": 0, "wins": 0},
-        "expert": {"total": 0, "wins": 0},
+        "expert":  {"total": 0, "wins": 0},
+        "daily":   {"total": 0, "wins": 0},
     }
 
 def save_stats(stats):
@@ -458,16 +590,19 @@ def compare(guess, target):
 
     return result
 
+# ─── App ──────────────────────────────────────────────────────────────────────
+
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("CarGuesser")
         self.configure(bg=BG)
         self.resizable(False, False)
-        self.cars     = load_cars()
-        self.stats    = load_stats()
-        self.settings = load_settings()
-        self._center(600, 640)
+        self.cars        = load_cars()
+        self.stats       = load_stats()
+        self.settings    = load_settings()
+        self.daily_state = load_daily_state()
+        self._center(600, 760)
         self.show_menu()
 
     def t(self, key, *args):
@@ -489,22 +624,28 @@ class App(tk.Tk):
 
     def show_menu(self):
         self.clear()
-        self._center(600, 720)
+        self._center(600, 760)
 
         tk.Label(self, text="🏎", font=("Segoe UI Emoji", 48), bg=BG, fg=ACCENT).pack(pady=(30, 0))
         tk.Label(self, text="CARGUESSER", font=("Courier New", 24, "bold"), bg=BG, fg=ACCENT).pack()
         tk.Label(self, text=self.t("title_sub"), font=("Courier New", 11), bg=BG, fg=SUBTEXT).pack(pady=(2, 20))
 
-        for key, cmd in [
+        # Günlük mod butonu — streak ve oynanıp oynanmadığını göster
+        daily_state = self.daily_state
+        streak      = daily_state.get("streak", 0)
+        played_txt  = f"  ✅" if daily_state.get("played") else ""
+        streak_txt  = f"  🔥{streak}" if streak > 0 else ""
+
+        buttons = [
             ("normal_mode",  lambda: self.start_game(False, False, "normal")),
             ("classic_mode", lambda: self.start_game(False, False, "classic")),
             ("hint_mode",    lambda: self.start_game(True,  False, "normal")),
             ("expert_mode",  lambda: self.start_game(False, True,  "normal")),
             ("jdm_mode",     lambda: self.start_game(False, False, "jdm")),
             ("unknown_mode", lambda: self.start_game(False, False, "unknown")),
-            ("stats_btn",    self.show_stats),
-            ("settings_btn", self.show_settings),
-        ]:
+        ]
+
+        for key, cmd in buttons:
             btn = tk.Button(
                 self, text=self.t(key),
                 font=("Courier New", 13, "bold"),
@@ -519,11 +660,42 @@ class App(tk.Tk):
             btn.bind("<Enter>", lambda e, b=btn: b.config(bg=GRAY))
             btn.bind("<Leave>", lambda e, b=btn: b.config(bg=BG3))
 
-        tk.Label(self, text=self.t("8_guesses"), font=("Courier New", 9), bg=BG, fg=SUBTEXT).pack(pady=(16, 0))
+        # Günlük mod butonu — altın renkli, streak gösterimi
+        daily_label = self.t("daily_mode") + played_txt + streak_txt
+        daily_btn = tk.Button(
+            self, text=daily_label,
+            font=("Courier New", 13, "bold"),
+            bg="#2a1f00", fg=GOLD,
+            activebackground="#3d2e00", activeforeground=GOLD,
+            relief="flat", bd=0,
+            width=24, height=2,
+            cursor="hand2",
+            command=lambda: self.start_game(False, False, "daily")
+        )
+        daily_btn.pack(pady=5)
+        daily_btn.bind("<Enter>", lambda e: daily_btn.config(bg="#3d2e00"))
+        daily_btn.bind("<Leave>", lambda e: daily_btn.config(bg="#2a1f00"))
+
+        for key, cmd in [("stats_btn", self.show_stats), ("settings_btn", self.show_settings)]:
+            btn = tk.Button(
+                self, text=self.t(key),
+                font=("Courier New", 13, "bold"),
+                bg=BG3, fg=TEXT,
+                activebackground=GRAY, activeforeground=TEXT,
+                relief="flat", bd=0,
+                width=24, height=2,
+                cursor="hand2",
+                command=cmd
+            )
+            btn.pack(pady=5)
+            btn.bind("<Enter>", lambda e, b=btn: b.config(bg=GRAY))
+            btn.bind("<Leave>", lambda e, b=btn: b.config(bg=BG3))
+
+        tk.Label(self, text=self.t("8_guesses"), font=("Courier New", 9), bg=BG, fg=SUBTEXT).pack(pady=(12, 0))
 
     def show_stats(self):
         self.clear()
-        self._center(480, 420)
+        self._center(480, 460)
         tk.Label(self, text=self.t("stats_title"), font=("Courier New", 16, "bold"), bg=BG, fg=ACCENT).pack(pady=(30, 16))
 
         total = self.stats.get("total", 0)
@@ -533,7 +705,6 @@ class App(tk.Tk):
         frame = tk.Frame(self, bg=BG2, padx=30, pady=16)
         frame.pack(padx=30, fill="x")
 
-        # Genel istatistik
         for label_key, val in [(self.t("total_games"), str(total)), (self.t("win_rate"), rate)]:
             row = tk.Frame(frame, bg=BG2)
             row.pack(fill="x", pady=4)
@@ -542,8 +713,12 @@ class App(tk.Tk):
 
         tk.Frame(frame, bg=BORDER, height=1).pack(fill="x", pady=10)
 
-        # Mod bazlı istatistikler
-        for mode_key, label in [("normal", self.t("stats_normal")), ("classic", self.t("stats_classic")), ("expert", self.t("stats_expert"))]:
+        for mode_key, label in [
+            ("normal",  self.t("stats_normal")),
+            ("classic", self.t("stats_classic")),
+            ("expert",  self.t("stats_expert")),
+            ("daily",   self.t("stats_daily")),
+        ]:
             mode_stats = self.stats.get(mode_key, {"total": 0, "wins": 0})
             mt = mode_stats.get("total", 0)
             mw = mode_stats.get("wins", 0)
@@ -553,6 +728,15 @@ class App(tk.Tk):
             tk.Label(row, text=label, font=("Courier New", 10), bg=BG2, fg=SUBTEXT, anchor="w").pack(side="left")
             tk.Label(row, text=f"{mt} oyun  {mr}", font=("Courier New", 11, "bold"), bg=BG2, fg=ACCENT, anchor="e").pack(side="right")
 
+        # Daily streak
+        streak = self.daily_state.get("streak", 0)
+        if streak > 0:
+            tk.Frame(frame, bg=BORDER, height=1).pack(fill="x", pady=6)
+            row = tk.Frame(frame, bg=BG2)
+            row.pack(fill="x", pady=3)
+            tk.Label(row, text=self.t("daily_streak", streak), font=("Courier New", 11, "bold"),
+                     bg=BG2, fg=GOLD).pack(side="left")
+
         tk.Button(self, text=self.t("back"), font=("Courier New", 11),
                   bg=BG3, fg=TEXT, activebackground=GRAY, activeforeground=TEXT,
                   relief="flat", bd=0, padx=20, pady=8, cursor="hand2",
@@ -560,7 +744,7 @@ class App(tk.Tk):
 
     def show_settings(self):
         self.clear()
-        self._center(420, 340)
+        self._center(460, 360)
         tk.Label(self, text=self.t("settings_title"), font=("Courier New", 16, "bold"), bg=BG, fg=ACCENT).pack(pady=(40, 20))
 
         frame = tk.Frame(self, bg=BG2, padx=30, pady=20)
@@ -570,22 +754,26 @@ class App(tk.Tk):
                  bg=BG2, fg=SUBTEXT).pack(anchor="w", pady=(0, 8))
 
         lang_frame1 = tk.Frame(frame, bg=BG2)
-        lang_frame1.pack(anchor="w", pady=(0,4))
+        lang_frame1.pack(anchor="w", pady=(0, 4))
         lang_frame2 = tk.Frame(frame, bg=BG2)
         lang_frame2.pack(anchor="w")
 
         current_lang = self.settings.get("lang", "en")
-        langs = [("en", "English"), ("tr", "Türkçe"), ("de", "Deutsch"), ("pl", "Polski"), ("zh", "中文"), ("fr", "Français")]
+        langs = [
+            ("en", "English"), ("tr", "Türkçe"), ("de", "Deutsch"),
+            ("pl", "Polski"),  ("zh", "中文"),    ("fr", "Français"),
+            ("it", "Italiano"),
+        ]
         for i, (lang_code, lang_name) in enumerate(langs):
             is_active = current_lang == lang_code
-            parent = lang_frame1 if i < 3 else lang_frame2
+            parent = lang_frame1 if i < 4 else lang_frame2
             tk.Button(
                 parent, text=lang_name,
                 font=("Courier New", 11, "bold"),
                 bg=ACCENT if is_active else BG3,
                 fg=BG if is_active else TEXT,
                 activebackground=GRAY, activeforeground=TEXT,
-                relief="flat", bd=0, padx=20, pady=6, cursor="hand2",
+                relief="flat", bd=0, padx=16, pady=6, cursor="hand2",
                 command=lambda lc=lang_code: self._set_lang(lc)
             ).pack(side="left", padx=4)
 
@@ -604,6 +792,8 @@ class App(tk.Tk):
         GameScreen(self, self.cars, self.stats, hint_mode, expert_mode, game_mode)
 
 
+# ─── GameScreen ───────────────────────────────────────────────────────────────
+
 class GameScreen(tk.Frame):
     MAX_GUESSES = 8
 
@@ -615,20 +805,35 @@ class GameScreen(tk.Frame):
         self.hint_mode   = hint_mode
         self.expert_mode = expert_mode
         self.game_mode   = game_mode
-        # Moda göre arabaları filtrele
-        if game_mode == "classic":
-            self.cars = [c for c in cars if "normal" in c.get("modes", ["normal"])][:65]
+
+        # Günlük mod
+        self.is_daily = (game_mode == "daily")
+        if self.is_daily:
+            self.daily_state = master.daily_state
+            self.cars = [c for c in cars if "normal" in c.get("modes", ["normal"])]
+            self.target = get_daily_car(cars)
+        elif game_mode == "classic":
+            self.cars   = [c for c in cars if "normal" in c.get("modes", ["normal"])][:65]
+            self.target = random.choice(self.cars)
         elif game_mode == "unknown":
-            self.cars = [c for c in cars if "unknown" in c.get("modes", [])]
+            self.cars   = [c for c in cars if "unknown" in c.get("modes", [])]
+            self.target = random.choice(self.cars)
         else:
-            self.cars = [c for c in cars if game_mode in c.get("modes", ["normal"])]
-        self.target      = random.choice(self.cars)
-        self.guesses     = []
-        self.used        = []
-        self.hints_used  = 0
-        self.won         = False
+            self.cars   = [c for c in cars if game_mode in c.get("modes", ["normal"])]
+            self.target = random.choice(self.cars)
+
+        self.guesses    = []
+        self.used       = []
+        self.hints_used = 0
+        self.won        = False
+        self._game_over = False
+
         master._center(1100, 780)
         self._build_ui()
+
+        # Günlük mod zaten oynanmışsa replay ekranı göster
+        if self.is_daily and self.daily_state.get("played"):
+            self._show_daily_already_played()
 
     def t(self, key, *args):
         return self.master.t(key, *args)
@@ -641,7 +846,11 @@ class GameScreen(tk.Frame):
                   relief="flat", bd=0, cursor="hand2",
                   command=self.master.show_menu).pack(side="left")
 
-        if self.hint_mode:
+        if self.is_daily:
+            mode_txt = self.t("daily_lbl")
+            date_lbl = self.t("daily_date", get_today_str())
+            tk.Label(top, text=date_lbl, font=("Courier New", 10), bg=BG, fg=GOLD).pack(side="right", padx=8)
+        elif self.hint_mode:
             mode_txt = self.t("hint_lbl")
         elif self.expert_mode:
             mode_txt = self.t("expert_lbl")
@@ -654,11 +863,12 @@ class GameScreen(tk.Frame):
         else:
             mode_txt = self.t("normal_lbl")
 
-        tk.Label(top, text=mode_txt, font=("Courier New", 12, "bold"), bg=BG, fg=ACCENT).pack(side="left", padx=12)
+        tk.Label(top, text=mode_txt, font=("Courier New", 12, "bold"), bg=BG,
+                 fg=GOLD if self.is_daily else ACCENT).pack(side="left", padx=12)
 
         self.turn_label = tk.Label(top, text=self.t("guesses_left", 1, self.MAX_GUESSES),
                                    font=("Courier New", 11), bg=BG, fg=SUBTEXT)
-        self.turn_label.pack(side="right")
+        self.turn_label.pack(side="right" if not self.is_daily else "left", padx=(12 if self.is_daily else 0))
 
         legend = tk.Frame(self, bg=BG)
         legend.pack(pady=(0, 6))
@@ -757,9 +967,7 @@ class GameScreen(tk.Frame):
     def _on_enter(self, e):
         if self.expert_mode:
             typed = self.search_var.get().strip()
-            # Önce tam eşleşme dene
             match = next((c for c in self.cars if c["name"].lower() == typed.lower()), None)
-            # Tam eşleşme yoksa fuzzy dene
             if not match:
                 fuzzy = fuzzy_match(typed, self.cars, self.used, limit=1)
                 if fuzzy:
@@ -789,7 +997,7 @@ class GameScreen(tk.Frame):
         self._make_guess(car)
 
     def _make_guess(self, guess):
-        if len(self.guesses) >= self.MAX_GUESSES or self.won:
+        if len(self.guesses) >= self.MAX_GUESSES or self.won or self._game_over:
             return
         self.used.append(guess["name"])
         result = compare(guess, self.target)
@@ -797,26 +1005,58 @@ class GameScreen(tk.Frame):
         self._add_row(guess, result)
         turn = len(self.guesses)
         self.turn_label.config(text=self.t("guesses_left", min(turn + 1, self.MAX_GUESSES), self.MAX_GUESSES))
+
         if all(v == "green" for v in result.values()):
-            self.won = True
+            self.won        = True
+            self._game_over = True
             self.stats["total"] = self.stats.get("total", 0) + 1
             self.stats["wins"]  = self.stats.get("wins", 0) + 1
-            # Mod istatistiği
-            stat_key = "expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal")
+            stat_key = "daily" if self.is_daily else ("expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal"))
             if stat_key not in self.stats:
                 self.stats[stat_key] = {"total": 0, "wins": 0}
             self.stats[stat_key]["total"] += 1
             self.stats[stat_key]["wins"]  += 1
             save_stats(self.stats)
+            if self.is_daily:
+                self._update_daily_state(won=True, turns=turn)
             self._end_screen(True, turn)
+
         elif turn >= self.MAX_GUESSES:
+            self._game_over = True
             self.stats["total"] = self.stats.get("total", 0) + 1
-            stat_key = "expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal")
+            stat_key = "daily" if self.is_daily else ("expert" if self.expert_mode else ("classic" if self.game_mode == "classic" else "normal"))
             if stat_key not in self.stats:
                 self.stats[stat_key] = {"total": 0, "wins": 0}
             self.stats[stat_key]["total"] += 1
             save_stats(self.stats)
+            if self.is_daily:
+                self._update_daily_state(won=False, turns=turn)
             self._end_screen(False, turn)
+
+    def _update_daily_state(self, won, turns):
+        """Günlük durumu kaydet; streak hesapla."""
+        today     = get_today_str()
+        yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+        state     = self.master.daily_state
+
+        state["played"] = True
+        state["won"]    = won
+        state["turns"]  = turns
+        state["date"]   = today
+
+        if won:
+            last = state.get("last_win_date", "")
+            if last == yesterday:
+                state["streak"] = state.get("streak", 0) + 1
+            elif last == today:
+                pass  # zaten sayıldı
+            else:
+                state["streak"] = 1
+            state["last_win_date"] = today
+        else:
+            state["streak"] = 0
+
+        save_daily_state(state)
 
     def _add_row(self, guess, result):
         COLOR_MAP = {"green": GREEN, "yellow": YELLOW, "red": RED}
@@ -856,6 +1096,43 @@ class GameScreen(tk.Frame):
         else:
             self.info_label.config(text=self.t("no_hint"))
 
+    def _show_daily_already_played(self):
+        """Günlük mod zaten oynanmışsa bilgi popup'ı göster."""
+        self.entry.config(state="disabled")
+        state   = self.daily_state
+        popup   = tk.Toplevel(self.master)
+        popup.configure(bg=BG)
+        popup.resizable(False, False)
+        popup.grab_set()
+        w, h = 420, 300
+        px   = self.master.winfo_x() + (self.master.winfo_width()  - w) // 2
+        py   = self.master.winfo_y() + (self.master.winfo_height() - h) // 2
+        popup.geometry(f"{w}x{h}+{px}+{py}")
+
+        tk.Label(popup, text="📅", font=("Segoe UI Emoji", 36), bg=BG).pack(pady=(20, 4))
+        tk.Label(popup, text=self.t("daily_already_played"),
+                 font=("Courier New", 14, "bold"), bg=BG, fg=GOLD).pack()
+        tk.Label(popup, text=self.t("daily_come_back"),
+                 font=("Courier New", 10), bg=BG, fg=SUBTEXT).pack(pady=4)
+
+        if state.get("won"):
+            tk.Label(popup, text=self.t("congrats", state.get("turns", "?")),
+                     font=("Courier New", 12), bg=BG, fg=GREEN).pack(pady=4)
+        else:
+            tk.Label(popup, text=self.t("failed") + " " + self.target["name"],
+                     font=("Courier New", 11), bg=BG, fg=RED).pack(pady=4)
+
+        streak = state.get("streak", 0)
+        if streak > 0:
+            tk.Label(popup, text=self.t("daily_streak", streak),
+                     font=("Courier New", 12, "bold"), bg=BG, fg=GOLD).pack(pady=4)
+
+        tk.Frame(popup, bg=BORDER, height=1).pack(fill="x", padx=24, pady=10)
+        tk.Button(popup, text=self.t("main_menu"), font=("Courier New", 11),
+                  bg=BG3, fg=TEXT, activebackground=GRAY, activeforeground=TEXT,
+                  relief="flat", bd=0, padx=16, pady=8, cursor="hand2",
+                  command=lambda: [popup.destroy(), self.master.show_menu()]).pack()
+
     def _end_screen(self, won, turns):
         self.entry.config(state="disabled")
         for lbl in self.suggest_labels:
@@ -864,36 +1141,48 @@ class GameScreen(tk.Frame):
         popup.configure(bg=BG)
         popup.resizable(False, False)
         popup.grab_set()
-        w, h = 400, 270
+        w, h = 420, 290
         px = self.master.winfo_x() + (self.master.winfo_width()  - w) // 2
         py = self.master.winfo_y() + (self.master.winfo_height() - h) // 2
         popup.geometry(f"{w}x{h}+{px}+{py}")
+
         if won:
             tk.Label(popup, text="🎉", font=("Segoe UI Emoji", 36), bg=BG).pack(pady=(24, 4))
             tk.Label(popup, text=self.t("congrats", turns),
                      font=("Courier New", 14, "bold"), bg=BG, fg=GREEN).pack()
+            if self.is_daily:
+                streak = self.master.daily_state.get("streak", 0)
+                if streak > 0:
+                    tk.Label(popup, text=self.t("daily_streak", streak),
+                             font=("Courier New", 11), bg=BG, fg=GOLD).pack(pady=2)
         else:
             tk.Label(popup, text="💀", font=("Segoe UI Emoji", 36), bg=BG).pack(pady=(24, 4))
             tk.Label(popup, text=self.t("failed"),
                      font=("Courier New", 14, "bold"), bg=BG, fg=RED).pack()
             tk.Label(popup, text=self.target["name"],
                      font=("Courier New", 12), bg=BG, fg=ACCENT).pack()
+
         tk.Frame(popup, bg=BORDER, height=1).pack(fill="x", padx=24, pady=12)
         btn_frame = tk.Frame(popup, bg=BG)
         btn_frame.pack()
 
         def play_again():
             popup.destroy()
-            self.master.start_game(hint_mode=self.hint_mode, expert_mode=self.expert_mode, game_mode=self.game_mode)
+            self.master.start_game(hint_mode=self.hint_mode, expert_mode=self.expert_mode,
+                                   game_mode=self.game_mode)
 
-        for txt_key, cmd in [
-            ("play_again", play_again),
-            ("main_menu",  lambda: [popup.destroy(), self.master.show_menu()])
-        ]:
-            tk.Button(btn_frame, text=self.t(txt_key), font=("Courier New", 11),
+        # Günlük modda "Play Again" yok — sadece "Main Menu"
+        if not self.is_daily:
+            tk.Button(btn_frame, text=self.t("play_again"), font=("Courier New", 11),
                       bg=BG3, fg=TEXT, activebackground=GRAY, activeforeground=TEXT,
                       relief="flat", bd=0, padx=16, pady=8, cursor="hand2",
-                      command=cmd).pack(side="left", padx=8)
+                      command=play_again).pack(side="left", padx=8)
+
+        tk.Button(btn_frame, text=self.t("main_menu"), font=("Courier New", 11),
+                  bg=BG3, fg=TEXT, activebackground=GRAY, activeforeground=TEXT,
+                  relief="flat", bd=0, padx=16, pady=8, cursor="hand2",
+                  command=lambda: [popup.destroy(), self.master.show_menu()]).pack(side="left", padx=8)
+
 
 if __name__ == "__main__":
     app = App()
